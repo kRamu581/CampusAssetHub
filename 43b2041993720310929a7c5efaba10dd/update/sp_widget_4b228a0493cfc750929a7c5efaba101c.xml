@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function() {
+  var c = this;
+
+  c.menuOpen = false;
+
+  c.toggleMenu = function() {
+    c.menuOpen = !c.menuOpen;
+  };
+
+  c.closeMenu = function() {
+    c.menuOpen = false;
+  };
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.cah-header {&#13;
+  width: 100%;&#13;
+  background: #ffffff;&#13;
+  border-bottom: 1px solid #e5e7eb;&#13;
+  font-family: Arial, sans-serif;&#13;
+  position: relative;&#13;
+  z-index: 1000;&#13;
+}&#13;
+&#13;
+.header-container {&#13;
+  max-width: 1200px;&#13;
+  min-height: 82px;&#13;
+  margin: auto;&#13;
+  padding: 0 30px;&#13;
+&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+}&#13;
+&#13;
+/* Brand */&#13;
+&#13;
+.brand {&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  text-decoration: none;&#13;
+  color: #111827;&#13;
+}&#13;
+&#13;
+.brand-icon {&#13;
+  width: 44px;&#13;
+  height: 44px;&#13;
+&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  justify-content: center;&#13;
+&#13;
+  background: #2563eb;&#13;
+  color: #ffffff;&#13;
+&#13;
+  border-radius: 10px;&#13;
+&#13;
+  font-size: 21px;&#13;
+  font-weight: bold;&#13;
+&#13;
+  margin-right: 12px;&#13;
+}&#13;
+&#13;
+.brand-name {&#13;
+  font-size: 17px;&#13;
+  font-weight: 700;&#13;
+  letter-spacing: 2px;&#13;
+}&#13;
+&#13;
+.brand-subtitle {&#13;
+  margin-top: 3px;&#13;
+  color: #6b7280;&#13;
+  font-size: 12px;&#13;
+}&#13;
+&#13;
+/* Desktop Navigation */&#13;
+&#13;
+.desktop-nav {&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  gap: 32px;&#13;
+&#13;
+  margin-left: auto;&#13;
+}&#13;
+&#13;
+.desktop-nav a {&#13;
+  color: #374151;&#13;
+  font-size: 14px;&#13;
+  text-decoration: none;&#13;
+  white-space: nowrap;&#13;
+}&#13;
+&#13;
+.desktop-nav a:hover {&#13;
+  color: #2563eb;&#13;
+}&#13;
+&#13;
+.login-btn {&#13;
+  margin-left: 32px;&#13;
+&#13;
+  padding: 10px 22px;&#13;
+&#13;
+  background: #2563eb;&#13;
+  color: #ffffff;&#13;
+&#13;
+  border-radius: 7px;&#13;
+&#13;
+  font-size: 14px;&#13;
+  font-weight: 600;&#13;
+  text-decoration: none;&#13;
+}&#13;
+&#13;
+/* Mobile button - hidden on desktop */&#13;
+&#13;
+.mobile-menu-btn {&#13;
+  display: none;&#13;
+&#13;
+  margin-left: auto;&#13;
+&#13;
+  width: 44px;&#13;
+  height: 44px;&#13;
+&#13;
+  border: none;&#13;
+  background: #f3f4f6;&#13;
+&#13;
+  border-radius: 8px;&#13;
+&#13;
+  color: #111827;&#13;
+  font-size: 20px;&#13;
+}&#13;
+&#13;
+/* Mobile menu */&#13;
+&#13;
+.mobile-nav {&#13;
+  display: none;&#13;
+}&#13;
+&#13;
+&#13;
+/* =========================&#13;
+   MOBILE&#13;
+========================= */&#13;
+&#13;
+@media (max-width: 768px) {&#13;
+&#13;
+  .header-container {&#13;
+    min-height: 72px;&#13;
+    padding: 0 18px;&#13;
+  }&#13;
+&#13;
+  .desktop-nav,&#13;
+  .login-btn {&#13;
+    display: none;&#13;
+  }&#13;
+&#13;
+  .mobile-menu-btn {&#13;
+    display: flex;&#13;
+    align-items: center;&#13;
+    justify-content: center;&#13;
+  }&#13;
+&#13;
+  .mobile-nav {&#13;
+    display: flex;&#13;
+    flex-direction: column;&#13;
+&#13;
+    width: 100%;&#13;
+    padding: 10px 18px 20px;&#13;
+&#13;
+    background: #ffffff;&#13;
+    border-top: 1px solid #e5e7eb;&#13;
+  }&#13;
+&#13;
+  .mobile-nav a {&#13;
+    padding: 14px 5px;&#13;
+&#13;
+    color: #374151;&#13;
+    font-size: 15px;&#13;
+    text-decoration: none;&#13;
+&#13;
+    border-bottom: 1px solid #f3f4f6;&#13;
+  }&#13;
+&#13;
+  .mobile-login {&#13;
+    margin-top: 12px;&#13;
+&#13;
+    padding: 12px 15px !important;&#13;
+&#13;
+    background: #2563eb;&#13;
+    color: #ffffff !important;&#13;
+&#13;
+    text-align: center;&#13;
+    border-radius: 7px;&#13;
+    border-bottom: none !important;&#13;
+  }&#13;
+&#13;
+  .brand-icon {&#13;
+    width: 40px;&#13;
+    height: 40px;&#13;
+    font-size: 18px;&#13;
+  }&#13;
+&#13;
+  .brand-name {&#13;
+    font-size: 15px;&#13;
+    letter-spacing: 1.5px;&#13;
+  }&#13;
+&#13;
+  .brand-subtitle {&#13;
+    font-size: 11px;&#13;
+  }&#13;
+&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>CAH Header</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 01:51:15</sys_created_on>
+        <sys_id>4b228a0493cfc750929a7c5efaba101c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>CAH Header</sys_name>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name>sp_widget_4b228a0493cfc750929a7c5efaba101c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 02:08:26</sys_updated_on>
+        <template><![CDATA[<header class="cah-header">
+
+  <div class="header-container">
+
+    <!-- Logo -->
+    <a class="brand" href="javascript:void(0)">
+      <div class="brand-icon">N</div>
+
+      <div class="brand-text">
+        <div class="brand-name">NOWSCRIPTS</div>
+        <div class="brand-subtitle">Campus Asset Hub</div>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+      <a href="javascript:void(0)">Home</a>
+      <a href="javascript:void(0)">How It Works</a>
+      <a href="javascript:void(0)">Features</a>
+    </nav>
+
+    <!-- Desktop Login -->
+    <a href="javascript:void(0)" class="login-btn">
+      Login
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button
+      class="mobile-menu-btn"
+      ng-click="c.toggleMenu()"
+      aria-label="Toggle menu">
+
+      <span class="glyphicon"
+            ng-class="c.menuOpen ? 'glyphicon-remove' : 'glyphicon-menu-hamburger'">
+      </span>
+
+    </button>
+
+  </div>
+
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" ng-if="c.menuOpen">
+
+    <a href="javascript:void(0)"
+       ng-click="c.closeMenu()">
+      Home
+    </a>
+
+    <a href="javascript:void(0)"
+       ng-click="c.closeMenu()">
+      How It Works
+    </a>
+
+    <a href="javascript:void(0)"
+       ng-click="c.closeMenu()">
+      Features
+    </a>
+
+    <a href="javascript:void(0)"
+       class="mobile-login"
+       ng-click="c.closeMenu()">
+      Login
+    </a>
+
+  </div>
+
+</header>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>4b228a0493cfc750929a7c5efaba101c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 01:51:13</sys_created_on>
+        <sys_id>c692064493cfc750929a7c5efaba10bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 01:51:13</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

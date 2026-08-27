@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="3605c05d93720310929a7c5efaba100a" label="Textbook" max_length="40" name="u_textbook" type="collection">
+        <element choice="3" label="Subject" max_length="40" name="u_subject" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Computer Science" sequence="0" value="computer_science"/>
+                <element inactive_on_update="false" label="others" sequence="5" value="others"/>
+                <element inactive_on_update="false" label="Business" sequence="3" value="business"/>
+                <element inactive_on_update="false" label="Mathematics" sequence="1" value="mathematics"/>
+                <element inactive_on_update="false" label="Physics" sequence="2" value="physics"/>
+                <element inactive_on_update="false" label="Electronics" sequence="4" value="electronics"/>
+            </choice>
+        </element>
+        <element label="ISBN" max_length="20" name="u_isbn" type="string"/>
+        <element choice="3" default="active" label="Status" max_length="255" name="u_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Retired" sequence="2" value="retired"/>
+                <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
+                <element inactive_on_update="false" label="lost" sequence="3" value="lost"/>
+                <element inactive_on_update="false" label="Under repair" sequence="1" value="under_repair"/>
+            </choice>
+        </element>
+        <element display="true" label="Title" max_length="100" name="u_title" type="string"/>
+        <element label="Author" max_length="100" name="u_author" type="string"/>
+    </element>
+</database>

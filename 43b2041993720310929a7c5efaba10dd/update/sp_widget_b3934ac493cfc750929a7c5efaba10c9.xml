@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.features-section {&#13;
+  width: 100%;&#13;
+  padding: 90px 8%;&#13;
+  background: #ffffff;&#13;
+  font-family: Arial, sans-serif;&#13;
+}&#13;
+&#13;
+.features-heading {&#13;
+  max-width: 750px;&#13;
+  margin: 0 auto 55px;&#13;
+  text-align: center;&#13;
+}&#13;
+&#13;
+.features-tag {&#13;
+  color: #2563eb;&#13;
+  font-size: 12px;&#13;
+  font-weight: bold;&#13;
+  letter-spacing: 1.5px;&#13;
+}&#13;
+&#13;
+.features-heading h2 {&#13;
+  margin: 12px 0 15px;&#13;
+  color: #111827;&#13;
+  font-size: 36px;&#13;
+  font-weight: 700;&#13;
+}&#13;
+&#13;
+.features-heading p {&#13;
+  margin: 0;&#13;
+  color: #6b7280;&#13;
+  font-size: 16px;&#13;
+  line-height: 1.6;&#13;
+}&#13;
+&#13;
+.features-grid {&#13;
+  max-width: 1150px;&#13;
+  margin: auto;&#13;
+&#13;
+  display: grid;&#13;
+  grid-template-columns: repeat(3, 1fr);&#13;
+  gap: 25px;&#13;
+}&#13;
+&#13;
+.feature-card {&#13;
+  padding: 30px;&#13;
+  border: 1px solid #e5e7eb;&#13;
+  border-radius: 12px;&#13;
+  background: #ffffff;&#13;
+&#13;
+  transition: 0.3s;&#13;
+}&#13;
+&#13;
+.feature-card:hover {&#13;
+  transform: translateY(-5px);&#13;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);&#13;
+}&#13;
+&#13;
+.feature-icon {&#13;
+  width: 58px;&#13;
+  height: 58px;&#13;
+&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  justify-content: center;&#13;
+&#13;
+  margin-bottom: 20px;&#13;
+&#13;
+  background: #eff6ff;&#13;
+  color: #2563eb;&#13;
+&#13;
+  border-radius: 12px;&#13;
+  font-size: 24px;&#13;
+}&#13;
+&#13;
+.feature-card h3 {&#13;
+  margin: 0 0 10px;&#13;
+  color: #111827;&#13;
+  font-size: 19px;&#13;
+}&#13;
+&#13;
+.feature-card p {&#13;
+  margin: 0;&#13;
+  color: #6b7280;&#13;
+  font-size: 14px;&#13;
+  line-height: 1.6;&#13;
+}&#13;
+&#13;
+@media (max-width: 900px) {&#13;
+  .features-grid {&#13;
+    grid-template-columns: repeat(2, 1fr);&#13;
+  }&#13;
+}&#13;
+&#13;
+@media (max-width: 600px) {&#13;
+  .features-grid {&#13;
+    grid-template-columns: 1fr;&#13;
+  }&#13;
+&#13;
+  .features-heading h2 {&#13;
+    font-size: 30px;&#13;
+  }&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>CAH Key Features</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 01:56:40</sys_created_on>
+        <sys_id>b3934ac493cfc750929a7c5efaba10c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CAH Key Features</sys_name>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name>sp_widget_b3934ac493cfc750929a7c5efaba10c9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 01:56:40</sys_updated_on>
+        <template><![CDATA[<div class="features-section">
+
+  <div class="features-heading">
+    <span class="features-tag">POWERFUL FEATURES</span>
+    <h2>Everything You Need to Manage Campus Assets</h2>
+    <p>
+      A single platform for students, faculty, and administrators to manage
+      the complete asset lifecycle.
+    </p>
+  </div>
+
+  <div class="features-grid">
+
+    <div class="feature-card">
+      <div class="feature-icon">
+        <span class="glyphicon glyphicon-qrcode"></span>
+      </div>
+      <h3>QR Self-Service</h3>
+      <p>Scan and check out assets quickly using QR or barcode technology.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">
+        <span class="glyphicon glyphicon-bell"></span>
+      </div>
+      <h3>AI-Powered Reminders</h3>
+      <p>Receive smart notifications before assets become overdue.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">
+        <span class="glyphicon glyphicon-dashboard"></span>
+      </div>
+      <h3>Real-Time Dashboard</h3>
+      <p>Track asset availability, requests, returns, and utilization.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">
+        <span class="glyphicon glyphicon-stats"></span>
+      </div>
+      <h3>Predictive Insights</h3>
+      <p>Identify potential shortages and return delays before they happen.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">
+        <span class="glyphicon glyphicon-refresh"></span>
+      </div>
+      <h3>Automated Restocking</h3>
+      <p>Trigger restocking workflows based on inventory requirements.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">
+        <span class="glyphicon glyphicon-list-alt"></span>
+      </div>
+      <h3>Full Lifecycle Tracking</h3>
+      <p>Manage assets from request and checkout to return and maintenance.</p>
+    </div>
+
+  </div>
+
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>b3934ac493cfc750929a7c5efaba10c9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 01:56:39</sys_created_on>
+        <sys_id>11d38ec493cfc750929a7c5efaba109b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 01:56:39</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

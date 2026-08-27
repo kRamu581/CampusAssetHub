@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_run_end/>
+        <entered_run_start/>
+        <entered_time>1970-01-01 02:00:00</entered_time>
+        <max_drift/>
+        <name>Flag Overdue Allocations</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <repeat_every/>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_daysofweek/>
+        <run_end/>
+        <run_month>1</run_month>
+        <run_period/>
+        <run_start/>
+        <run_time>1970-01-01 02:00:00</run_time>
+        <run_type>daily</run_type>
+        <run_weekinmonth>1</run_weekinmonth>
+        <script><![CDATA[(function() {
+
+    var today = new GlideDateTime();
+
+    var gr = new GlideRecord('u_asset_allocation');
+
+    gr.addQuery('u_allocation_status', 'Allocated');
+    gr.addQuery('u_expected_return_date', '<', today);
+    gr.query();
+
+    while (gr.next()) {
+        gr.u_allocation_status = 'Overdue';
+        gr.update();
+    }
+
+})();]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 14:04:56</sys_created_on>
+        <sys_id>a39063b393ba8750929a7c5efaba1052</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Flag Overdue Allocations</sys_name>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name>sysauto_script_a39063b393ba8750929a7c5efaba1052</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 14:04:56</sys_updated_on>
+        <time_zone>floating</time_zone>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>a39063b393ba8750929a7c5efaba1052</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 14:04:56</sys_created_on>
+        <sys_id>bfe06b3b93ba8750929a7c5efaba10cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 14:04:56</sys_updated_on>
+        <table>sysauto_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
