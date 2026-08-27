@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="d59dc81193f20310929a7c5efaba101a" extends="alm_asset" label="Campus Hardware Asset" max_length="40" name="u_campus_hardware_asset" type="collection">
+        <element choice="3" label="Campus Asset Category" max_length="40" name="u_campus_asset_category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Desktop" sequence="1" value="desktop"/>
+                <element inactive_on_update="false" label="Projector" sequence="2" value="projector"/>
+                <element inactive_on_update="false" label="lab Kit" sequence="3" value="lab_kit"/>
+                <element inactive_on_update="false" label="Other" sequence="4" value="other"/>
+                <element inactive_on_update="false" label="Laptop" sequence="0" value="laptop"/>
+            </choice>
+        </element>
+        <element label="Checked Out To" max_length="32" name="u_checked_out_to" reference="sys_user" type="reference"/>
+        <element label="Expected Return Date" max_length="40" name="u_expected_return_date" type="glide_date"/>
+        <element label="Lab/Room Number" max_length="40" name="u_lab_room_number" type="string"/>
+        <index name="index">
+            <element name="u_checked_out_to"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function() {
+  var c = this;
+
+  c.returnAsset = function(asset) {
+    alert("Return flow will start for: " + asset.name);
+  };
+
+  c.renewAsset = function(asset) {
+    alert("Renewal flow will start for: " + asset.name);
+  };
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.active-assets {&#13;
+  width: 86%;&#13;
+  max-width: 1200px;&#13;
+  margin: 0 auto 30px;&#13;
+&#13;
+  background: #ffffff;&#13;
+  border: 1px solid #e5e7eb;&#13;
+  border-radius: 10px;&#13;
+&#13;
+  padding: 20px 25px;&#13;
+&#13;
+  font-family: Arial, sans-serif;&#13;
+}&#13;
+&#13;
+.assets-header {&#13;
+  display: flex;&#13;
+  justify-content: space-between;&#13;
+  align-items: center;&#13;
+&#13;
+  padding-bottom: 15px;&#13;
+  border-bottom: 1px solid #e5e7eb;&#13;
+}&#13;
+&#13;
+.assets-header h3 {&#13;
+  margin: 0;&#13;
+  color: #111827;&#13;
+  font-size: 18px;&#13;
+}&#13;
+&#13;
+.asset-count {&#13;
+  font-size: 12px;&#13;
+  color: #2563eb;&#13;
+  background: #eff6ff;&#13;
+  padding: 5px 10px;&#13;
+  border-radius: 20px;&#13;
+}&#13;
+&#13;
+.asset-row {&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  justify-content: space-between;&#13;
+&#13;
+  padding: 18px 0;&#13;
+  border-bottom: 1px solid #f0f0f0;&#13;
+}&#13;
+&#13;
+.asset-row:last-child {&#13;
+  border-bottom: none;&#13;
+}&#13;
+&#13;
+.asset-info {&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  gap: 14px;&#13;
+}&#13;
+&#13;
+.asset-icon {&#13;
+  width: 46px;&#13;
+  height: 46px;&#13;
+&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  justify-content: center;&#13;
+&#13;
+  background: #eff6ff;&#13;
+  border-radius: 10px;&#13;
+&#13;
+  font-size: 22px;&#13;
+}&#13;
+&#13;
+.asset-name {&#13;
+  font-size: 15px;&#13;
+  font-weight: 600;&#13;
+  color: #111827;&#13;
+}&#13;
+&#13;
+.asset-due {&#13;
+  font-size: 13px;&#13;
+  color: #6b7280;&#13;
+  margin-top: 4px;&#13;
+}&#13;
+&#13;
+.asset-actions {&#13;
+  display: flex;&#13;
+  gap: 10px;&#13;
+}&#13;
+&#13;
+.asset-actions button {&#13;
+  padding: 8px 16px;&#13;
+&#13;
+  border-radius: 6px;&#13;
+  cursor: pointer;&#13;
+&#13;
+  font-size: 13px;&#13;
+  font-weight: 600;&#13;
+}&#13;
+&#13;
+.return-btn {&#13;
+  background: #ffffff;&#13;
+  color: #374151;&#13;
+  border: 1px solid #d1d5db;&#13;
+}&#13;
+&#13;
+.renew-btn {&#13;
+  background: #2563eb;&#13;
+  color: #ffffff;&#13;
+  border: 1px solid #2563eb;&#13;
+}&#13;
+&#13;
+/* Mobile */&#13;
+&#13;
+@media (max-width: 768px) {&#13;
+&#13;
+  .active-assets {&#13;
+    width: 90%;&#13;
+    padding: 18px;&#13;
+  }&#13;
+&#13;
+  .asset-row {&#13;
+    align-items: flex-start;&#13;
+    flex-direction: column;&#13;
+    gap: 15px;&#13;
+  }&#13;
+&#13;
+  .asset-actions {&#13;
+    width: 100%;&#13;
+  }&#13;
+&#13;
+  .asset-actions button {&#13;
+    flex: 1;&#13;
+  }&#13;
+&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>CAH My Active Assets</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+
+  data.assets = [
+    {
+      icon: "]]>💻<![CDATA[",
+      name: "Dell Latitude Laptop",
+      dueDate: "Sep 02"
+    },
+    {
+      icon: "]]>📚<![CDATA[",
+      name: "Data Structures Textbook",
+      dueDate: "Sep 05"
+    }
+  ];
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 02:23:41</sys_created_on>
+        <sys_id>fbc94a0493030b50929a7c5efaba1065</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CAH My Active Assets</sys_name>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name>sp_widget_fbc94a0493030b50929a7c5efaba1065</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 02:23:41</sys_updated_on>
+        <template><![CDATA[<div class="active-assets">
+
+  <div class="assets-header">
+    <h3>My Active Assets</h3>
+    <span class="asset-count">
+      {{c.data.assets.length}} Active
+    </span>
+  </div>
+
+  <div class="asset-row" ng-repeat="asset in c.data.assets">
+
+    <div class="asset-info">
+
+      <div class="asset-icon">
+        {{asset.icon}}
+      </div>
+
+      <div>
+        <div class="asset-name">
+          {{asset.name}}
+        </div>
+
+        <div class="asset-due">
+          Due: {{asset.dueDate}}
+        </div>
+      </div>
+
+    </div>
+
+    <div class="asset-actions">
+
+      <button
+        class="return-btn"
+        ng-click="c.returnAsset(asset)">
+        Return
+      </button>
+
+      <button
+        class="renew-btn"
+        ng-click="c.renewAsset(asset)">
+        Renew
+      </button>
+
+    </div>
+
+  </div>
+
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>fbc94a0493030b50929a7c5efaba1065</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 02:23:39</sys_created_on>
+        <sys_id>890aca0493030b50929a7c5efaba105b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 02:23:39</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.quick-actions-section {&#13;
+  width: 100%;&#13;
+  padding: 90px 8%;&#13;
+  background: #ffffff;&#13;
+  font-family: Arial, sans-serif;&#13;
+}&#13;
+&#13;
+.section-heading {&#13;
+  text-align: center;&#13;
+  margin-bottom: 50px;&#13;
+}&#13;
+&#13;
+.section-tag {&#13;
+  color: #2563eb;&#13;
+  font-size: 12px;&#13;
+  font-weight: bold;&#13;
+  letter-spacing: 1.5px;&#13;
+}&#13;
+&#13;
+.section-heading h2 {&#13;
+  margin: 12px 0;&#13;
+  color: #111827;&#13;
+  font-size: 36px;&#13;
+  font-weight: 700;&#13;
+}&#13;
+&#13;
+.section-heading p {&#13;
+  max-width: 600px;&#13;
+  margin: 0 auto;&#13;
+  color: #6b7280;&#13;
+  font-size: 16px;&#13;
+  line-height: 1.6;&#13;
+}&#13;
+&#13;
+.quick-actions {&#13;
+  display: flex;&#13;
+  gap: 25px;&#13;
+  max-width: 1150px;&#13;
+  margin: auto;&#13;
+}&#13;
+&#13;
+.action-card {&#13;
+  flex: 1;&#13;
+  padding: 35px 28px;&#13;
+  border: 1px solid #e5e7eb;&#13;
+  border-radius: 12px;&#13;
+  background: #ffffff;&#13;
+  text-align: center;&#13;
+  transition: 0.3s;&#13;
+}&#13;
+&#13;
+.action-card:hover {&#13;
+  transform: translateY(-5px);&#13;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);&#13;
+}&#13;
+&#13;
+.action-icon {&#13;
+  width: 58px;&#13;
+  height: 58px;&#13;
+  margin: 0 auto 20px;&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  justify-content: center;&#13;
+  border-radius: 12px;&#13;
+  background: #eff6ff;&#13;
+  color: #2563eb;&#13;
+  font-size: 24px;&#13;
+}&#13;
+&#13;
+.action-card h3 {&#13;
+  margin: 0 0 12px;&#13;
+  color: #111827;&#13;
+  font-size: 20px;&#13;
+}&#13;
+&#13;
+.action-card p {&#13;
+  min-height: 48px;&#13;
+  color: #6b7280;&#13;
+  font-size: 14px;&#13;
+  line-height: 1.6;&#13;
+}&#13;
+&#13;
+.action-card a {&#13;
+  color: #2563eb;&#13;
+  font-weight: bold;&#13;
+  text-decoration: none;&#13;
+  font-size: 14px;&#13;
+}&#13;
+&#13;
+.featured {&#13;
+  border: 2px solid #2563eb;&#13;
+}&#13;
+&#13;
+@media (max-width: 768px) {&#13;
+  .quick-actions {&#13;
+    flex-direction: column;&#13;
+  }&#13;
+&#13;
+  .section-heading h2 {&#13;
+    font-size: 30px;&#13;
+  }&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>CAH Quick Actions</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 01:54:43</sys_created_on>
+        <sys_id>53238a8493cfc750929a7c5efaba100d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CAH Quick Actions</sys_name>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name>sp_widget_53238a8493cfc750929a7c5efaba100d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 01:54:43</sys_updated_on>
+        <template><![CDATA[<div class="quick-actions-section">
+
+  <div class="section-heading">
+    <span class="section-tag">QUICK ACCESS</span>
+    <h2>What would you like to do?</h2>
+    <p>Access campus assets and manage your requests in just a few clicks.</p>
+  </div>
+
+  <div class="quick-actions">
+
+    <div class="action-card">
+      <div class="action-icon">
+        <span class="glyphicon glyphicon-search"></span>
+      </div>
+      <h3>Find an Asset</h3>
+      <p>Search textbooks, laptops, lab kits and other campus resources.</p>
+      <a href="javascript:void(0)">Browse Assets →</a>
+    </div>
+
+    <div class="action-card featured">
+      <div class="action-icon">
+        <span class="glyphicon glyphicon-plus"></span>
+      </div>
+      <h3>Rent an Asset</h3>
+      <p>Request the asset you need through a simple self-service process.</p>
+      <a href="javascript:void(0)">Request Now →</a>
+    </div>
+
+    <div class="action-card">
+      <div class="action-icon">
+        <span class="glyphicon glyphicon-repeat"></span>
+      </div>
+      <h3>Return or Renew</h3>
+      <p>Manage your active assets, returns and renewal requests.</p>
+      <a href="javascript:void(0)">My Assets →</a>
+    </div>
+
+  </div>
+
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>53238a8493cfc750929a7c5efaba100d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 01:54:41</sys_created_on>
+        <sys_id>a0634e8493cfc750929a7c5efaba1018</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 01:54:41</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

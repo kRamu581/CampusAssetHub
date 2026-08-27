@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.impact-section {&#13;
+  width: 100%;&#13;
+  padding: 90px 8%;&#13;
+  background: #eff6ff;&#13;
+  font-family: Arial, sans-serif;&#13;
+}&#13;
+&#13;
+.impact-heading {&#13;
+  max-width: 750px;&#13;
+  margin: 0 auto 55px;&#13;
+  text-align: center;&#13;
+}&#13;
+&#13;
+.impact-tag {&#13;
+  color: #2563eb;&#13;
+  font-size: 12px;&#13;
+  font-weight: bold;&#13;
+  letter-spacing: 1.5px;&#13;
+}&#13;
+&#13;
+.impact-heading h2 {&#13;
+  margin: 12px 0 15px;&#13;
+  color: #111827;&#13;
+  font-size: 36px;&#13;
+  font-weight: 700;&#13;
+}&#13;
+&#13;
+.impact-heading p {&#13;
+  margin: 0;&#13;
+  color: #6b7280;&#13;
+  font-size: 16px;&#13;
+  line-height: 1.6;&#13;
+}&#13;
+&#13;
+.impact-grid {&#13;
+  max-width: 1150px;&#13;
+  margin: auto;&#13;
+&#13;
+  display: grid;&#13;
+  grid-template-columns: repeat(4, 1fr);&#13;
+  gap: 20px;&#13;
+}&#13;
+&#13;
+.impact-card {&#13;
+  padding: 30px 20px;&#13;
+  background: #ffffff;&#13;
+  border-radius: 12px;&#13;
+  text-align: center;&#13;
+  border: 1px solid #dbeafe;&#13;
+}&#13;
+&#13;
+.impact-number {&#13;
+  color: #2563eb;&#13;
+  font-size: 38px;&#13;
+  font-weight: bold;&#13;
+  margin-bottom: 10px;&#13;
+}&#13;
+&#13;
+.impact-title {&#13;
+  color: #111827;&#13;
+  font-size: 16px;&#13;
+  font-weight: bold;&#13;
+  margin-bottom: 10px;&#13;
+}&#13;
+&#13;
+.impact-card p {&#13;
+  margin: 0;&#13;
+  color: #6b7280;&#13;
+  font-size: 13px;&#13;
+  line-height: 1.6;&#13;
+}&#13;
+&#13;
+@media (max-width: 900px) {&#13;
+  .impact-grid {&#13;
+    grid-template-columns: repeat(2, 1fr);&#13;
+  }&#13;
+}&#13;
+&#13;
+@media (max-width: 600px) {&#13;
+  .impact-grid {&#13;
+    grid-template-columns: 1fr;&#13;
+  }&#13;
+&#13;
+  .impact-heading h2 {&#13;
+    font-size: 30px;&#13;
+  }&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>CAH Impact Stats</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 01:57:29</sys_created_on>
+        <sys_id>79e3c20893cfc750929a7c5efaba10fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CAH Impact Stats</sys_name>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name>sp_widget_79e3c20893cfc750929a7c5efaba10fb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 01:57:29</sys_updated_on>
+        <template><![CDATA[<div class="impact-section">
+
+  <div class="impact-heading">
+    <span class="impact-tag">MEASURABLE IMPACT</span>
+
+    <h2>Smarter Asset Management for a Better Campus</h2>
+
+    <p>
+      Campus Asset Hub transforms manual asset management into a faster,
+      smarter and more connected digital experience.
+    </p>
+  </div>
+
+  <div class="impact-grid">
+
+    <div class="impact-card">
+      <div class="impact-number">70%+</div>
+      <div class="impact-title">Reduction in Queues</div>
+      <p>Faster self-service requests and QR-based checkout.</p>
+    </div>
+
+    <div class="impact-card">
+      <div class="impact-number">40%+</div>
+      <div class="impact-title">Fewer Unreturned Assets</div>
+      <p>Smart reminders help users return assets on time.</p>
+    </div>
+
+    <div class="impact-card">
+      <div class="impact-number">&lt; 30s</div>
+      <div class="impact-title">Average Checkout</div>
+      <p>Quick QR-based self-service asset checkout.</p>
+    </div>
+
+    <div class="impact-card">
+      <div class="impact-number">24/7</div>
+      <div class="impact-title">Real-Time Visibility</div>
+      <p>Track assets, requests, returns and inventory anytime.</p>
+    </div>
+
+  </div>
+
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>79e3c20893cfc750929a7c5efaba10fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 01:57:27</sys_created_on>
+        <sys_id>81040a4493cfc750929a7c5efaba103f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 01:57:27</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

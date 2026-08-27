@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function() {
+  var c = this;
+
+  c.browseCatalog = function() {
+    alert("Asset Catalog page will open here.");
+  };
+
+  c.scanQR = function() {
+    alert("QR Checkout page will open here.");
+  };
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.quick-links-section {&#13;
+  width: 86%;&#13;
+  max-width: 1200px;&#13;
+  margin: 0 auto 50px;&#13;
+&#13;
+  font-family: Arial, sans-serif;&#13;
+}&#13;
+&#13;
+.quick-links-content {&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  justify-content: space-between;&#13;
+&#13;
+  padding: 25px 30px;&#13;
+&#13;
+  background: #f8fafc;&#13;
+  border: 1px solid #e5e7eb;&#13;
+  border-radius: 10px;&#13;
+}&#13;
+&#13;
+.quick-links-content h3 {&#13;
+  margin: 0 0 7px;&#13;
+  color: #111827;&#13;
+  font-size: 18px;&#13;
+}&#13;
+&#13;
+.quick-links-content p {&#13;
+  margin: 0;&#13;
+  color: #6b7280;&#13;
+  font-size: 13px;&#13;
+}&#13;
+&#13;
+.quick-links-buttons {&#13;
+  display: flex;&#13;
+  gap: 12px;&#13;
+}&#13;
+&#13;
+.ql-btn {&#13;
+  padding: 11px 18px;&#13;
+&#13;
+  background: #ffffff;&#13;
+  color: #374151;&#13;
+&#13;
+  border: 1px solid #d1d5db;&#13;
+  border-radius: 7px;&#13;
+&#13;
+  font-size: 13px;&#13;
+  font-weight: 600;&#13;
+&#13;
+  cursor: pointer;&#13;
+}&#13;
+&#13;
+.ql-btn .glyphicon {&#13;
+  margin-right: 6px;&#13;
+}&#13;
+&#13;
+.ql-btn.primary {&#13;
+  background: #2563eb;&#13;
+  color: #ffffff;&#13;
+  border-color: #2563eb;&#13;
+}&#13;
+&#13;
+.ql-btn:hover {&#13;
+  opacity: 0.9;&#13;
+}&#13;
+&#13;
+@media (max-width: 768px) {&#13;
+&#13;
+  .quick-links-section {&#13;
+    width: 90%;&#13;
+  }&#13;
+&#13;
+  .quick-links-content {&#13;
+    flex-direction: column;&#13;
+    align-items: flex-start;&#13;
+    gap: 20px;&#13;
+&#13;
+    padding: 22px;&#13;
+  }&#13;
+&#13;
+  .quick-links-buttons {&#13;
+    width: 100%;&#13;
+    flex-direction: column;&#13;
+  }&#13;
+&#13;
+  .ql-btn {&#13;
+    width: 100%;&#13;
+  }&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>CAH Student Quick Links</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 02:24:53</sys_created_on>
+        <sys_id>c30ac64493030b50929a7c5efaba1032</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CAH Student Quick Links</sys_name>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name>sp_widget_c30ac64493030b50929a7c5efaba1032</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 02:24:53</sys_updated_on>
+        <template><![CDATA[<div class="quick-links-section">
+
+  <div class="quick-links-content">
+
+    <div>
+      <h3>Need something?</h3>
+      <p>Browse available campus assets or check out an approved asset using QR.</p>
+    </div>
+
+    <div class="quick-links-buttons">
+
+      <button class="ql-btn primary"
+              ng-click="c.browseCatalog()">
+        <span class="glyphicon glyphicon-th-large"></span>
+        Browse Catalog
+      </button>
+
+      <button class="ql-btn"
+              ng-click="c.scanQR()">
+        <span class="glyphicon glyphicon-qrcode"></span>
+        Scan QR to Check Out
+      </button>
+
+    </div>
+
+  </div>
+
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>c30ac64493030b50929a7c5efaba1032</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 02:24:52</sys_created_on>
+        <sys_id>7e4a4a4493030b50929a7c5efaba1045</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 02:24:52</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

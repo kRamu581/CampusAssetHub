@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-18 03:39:31</sys_created_on>
+        <sys_id>e415045d93720310929a7c5efaba1053</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_textbook.textbook_user</sys_name>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_security_acl display_value="u_textbook">1015045d93720310929a7c5efaba104b</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_e415045d93720310929a7c5efaba1053</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-18 03:39:31</sys_updated_on>
+        <sys_user_role display_value="textbook_user" name="textbook_user">4815045d93720310929a7c5efaba1028</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

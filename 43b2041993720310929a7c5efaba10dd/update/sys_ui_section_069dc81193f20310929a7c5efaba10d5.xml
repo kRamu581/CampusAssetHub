@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Depreciation" section_id="069dc81193f20310929a7c5efaba10d5" sys_domain="global" table="u_campus_hardware_asset" version="3" view="itam_workspace">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>depreciation</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-18 04:16:45</sys_created_on>
+            <sys_id>4e9dc81193f20310929a7c5efaba10da</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Depreciation" display_value="Depreciation" name="u_campus_hardware_asset" sys_domain="global" view="e53c64d153c230108125ddeeff7b12e3">069dc81193f20310929a7c5efaba10d5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-18 04:16:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>depreciation_date</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-18 04:16:45</sys_created_on>
+            <sys_id>c29dc81193f20310929a7c5efaba10d8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Depreciation" display_value="Depreciation" name="u_campus_hardware_asset" sys_domain="global" view="e53c64d153c230108125ddeeff7b12e3">069dc81193f20310929a7c5efaba10d5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-18 04:16:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>salvage_value</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-18 04:16:45</sys_created_on>
+            <sys_id>ca9dc81193f20310929a7c5efaba10db</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Depreciation" display_value="Depreciation" name="u_campus_hardware_asset" sys_domain="global" view="e53c64d153c230108125ddeeff7b12e3">069dc81193f20310929a7c5efaba10d5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-18 04:16:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-18 04:16:45</sys_created_on>
+            <sys_id>429dc81193f20310929a7c5efaba10d9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Depreciation" display_value="Depreciation" name="u_campus_hardware_asset" sys_domain="global" view="e53c64d153c230108125ddeeff7b12e3">069dc81193f20310929a7c5efaba10d5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-18 04:16:45</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>residual_date</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-18 04:16:45</sys_created_on>
+            <sys_id>4a9dc81193f20310929a7c5efaba10dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Depreciation" display_value="Depreciation" name="u_campus_hardware_asset" sys_domain="global" view="e53c64d153c230108125ddeeff7b12e3">069dc81193f20310929a7c5efaba10d5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-18 04:16:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>residual</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-18 04:16:45</sys_created_on>
+            <sys_id>469dc81193f20310929a7c5efaba10d7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Depreciation" display_value="Depreciation" name="u_campus_hardware_asset" sys_domain="global" view="e53c64d153c230108125ddeeff7b12e3">069dc81193f20310929a7c5efaba10d5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-18 04:16:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>depreciated_amount</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-18 04:16:45</sys_created_on>
+            <sys_id>ce9dc81193f20310929a7c5efaba10d9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Depreciation" display_value="Depreciation" name="u_campus_hardware_asset" sys_domain="global" view="e53c64d153c230108125ddeeff7b12e3">069dc81193f20310929a7c5efaba10d5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-18 04:16:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Depreciation</caption>
+            <header>false</header>
+            <name>u_campus_hardware_asset</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-18 04:16:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>069dc81193f20310929a7c5efaba10d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_campus_hardware_asset</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+            <sys_update_name>sys_ui_section_069dc81193f20310929a7c5efaba10d5</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-18 04:16:45</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="ITAM Workspace" name="itam_workspace">e53c64d153c230108125ddeeff7b12e3</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

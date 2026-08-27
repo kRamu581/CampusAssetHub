@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="e0afed1193324310929a7c5efaba10bc" label="Asset Allocation" max_length="40" name="u_asset_allocation" type="collection">
+        <element choice="3" label="Allocation Status" max_length="40" name="u_allocation_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Overdue" sequence="2" value="overdue"/>
+                <element inactive_on_update="false" label="Lost" sequence="3" value="lost"/>
+                <element inactive_on_update="false" label="Returned" sequence="1" value="returned"/>
+                <element inactive_on_update="false" label="Allocated" sequence="0" value="allocated"/>
+            </choice>
+        </element>
+        <element label="Allocated to" max_length="32" name="u_allocated_to" reference="sys_user" type="reference"/>
+        <element label="Textbook" max_length="32" name="u_textbook" reference="u_textbook" type="reference"/>
+        <element label="Allocation Date" max_length="40" name="u_allocation_date" type="glide_date"/>
+        <element label="Hardware Asset" max_length="32" name="u_hardware_asset" reference="u_campus_hardware_asset" type="reference"/>
+        <element label="Actual Return Date" max_length="40" name="u_actual_return_date" type="glide_date"/>
+        <element label="Expected Return Date" max_length="40" name="u_expected_return_date" type="glide_date"/>
+        <index name="index">
+            <element name="u_allocated_to"/>
+        </index>
+        <index name="index2">
+            <element name="u_hardware_asset"/>
+        </index>
+        <index name="index3">
+            <element name="u_textbook"/>
+        </index>
+    </element>
+</database>
