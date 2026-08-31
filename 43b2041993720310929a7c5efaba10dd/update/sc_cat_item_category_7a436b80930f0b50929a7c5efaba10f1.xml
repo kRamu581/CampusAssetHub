@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Laptop Request">52712f8c93cb0b50929a7c5efaba1082</sc_cat_item>
+        <sc_category display_value="Campus Asset &amp; Textbook Services">c250670c93cb0b50929a7c5efaba10df</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 08:53:43</sys_created_on>
+        <sys_id>7a436b80930f0b50929a7c5efaba10f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Campus Asset &amp; Textbook Services.Laptop Request</sys_name>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name>sc_cat_item_category_7a436b80930f0b50929a7c5efaba10f1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 08:53:43</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

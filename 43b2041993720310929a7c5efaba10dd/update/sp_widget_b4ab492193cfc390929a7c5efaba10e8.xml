@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function() {
+  var c = this;
+
+  c.requestAsset = function(asset) {
+    c.data.selectedAsset = asset;
+    c.data.showModal = true;
+  };
+
+  c.closeModal = function() {
+    c.data.showModal = false;
+  };
+
+  c.confirmRequest = function() {
+    alert("Request submitted for: " + c.data.selectedAsset.name);
+    c.closeModal();
+  };
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.asset-grid {&#13;
+  width: 86%;&#13;
+  max-width: 1200px;&#13;
+  margin: 0 auto 40px;&#13;
+  display: grid;&#13;
+  grid-template-columns: repeat(3, 1fr);&#13;
+  gap: 22px;&#13;
+}&#13;
+&#13;
+.asset-card {&#13;
+  background: #fff;&#13;
+  border: 1px solid #e0e0e0;&#13;
+  border-radius: 4px;&#13;
+  padding: 22px;&#13;
+  text-align: center;&#13;
+}&#13;
+&#13;
+.asset-card-icon {&#13;
+  font-size: 32px;&#13;
+  margin-bottom: 10px;&#13;
+}&#13;
+&#13;
+.asset-card h4 {&#13;
+  font-size: 15px;&#13;
+  color: #333;&#13;
+  margin: 0 0 8px;&#13;
+}&#13;
+&#13;
+.asset-meta {&#13;
+  font-size: 12.5px;&#13;
+  color: #777;&#13;
+  margin-bottom: 4px;&#13;
+}&#13;
+&#13;
+.asset-card button {&#13;
+  margin-top: 14px;&#13;
+  width: 100%;&#13;
+  padding: 10px;&#13;
+  font-size: 13px;&#13;
+  background: #e60028;&#13;
+  color: white;&#13;
+  border: none;&#13;
+  border-radius: 4px;&#13;
+  cursor: pointer;&#13;
+}&#13;
+&#13;
+.asset-card button:hover {&#13;
+  opacity: 0.9;&#13;
+}&#13;
+&#13;
+@media (max-width: 768px) {&#13;
+  .asset-grid {&#13;
+    grid-template-columns: 1fr;&#13;
+  }&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[(function() {
+  data.assets = [
+    { icon: "]]>💻<![CDATA[", name: "Dell Latitude 5440", available: 12, condition: "Excellent" },
+    { icon: "]]>📚<![CDATA[", name: "DBMS Textbook", available: 30, condition: "Good" },
+    { icon: "]]>🔬<![CDATA[", name: "Arduino Lab Kit", available: 5, condition: "Excellent" },
+    { icon: "]]>💻<![CDATA[", name: "HP ProBook 450", available: 8, condition: "Fair" },
+    { icon: "]]>📚<![CDATA[", name: "Data Structures Textbook", available: 20, condition: "Good" },
+    { icon: "]]>🔬<![CDATA[", name: "Raspberry Pi Kit", available: 3, condition: "Excellent" }
+  ];
+})();]]></link>
+        <name>CAH Asset Grid</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 13:43:19</sys_created_on>
+        <sys_id>b4ab492193cfc390929a7c5efaba10e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CAH Asset Grid</sys_name>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name>sp_widget_b4ab492193cfc390929a7c5efaba10e8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 13:43:19</sys_updated_on>
+        <template><![CDATA[<div class="asset-grid">
+
+  <div class="asset-card" ng-repeat="asset in c.data.assets">
+    <div class="asset-card-icon">{{asset.icon}}</div>
+    <h4>{{asset.name}}</h4>
+    <div class="asset-meta">Available: {{asset.available}}</div>
+    <div class="asset-meta">Condition: {{asset.condition}}</div>
+    <button ng-click="c.requestAsset(asset)">Request Asset</button>
+  </div>
+
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>b4ab492193cfc390929a7c5efaba10e8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 13:43:18</sys_created_on>
+        <sys_id>b7eb816193cfc390929a7c5efaba1077</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 13:43:18</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
