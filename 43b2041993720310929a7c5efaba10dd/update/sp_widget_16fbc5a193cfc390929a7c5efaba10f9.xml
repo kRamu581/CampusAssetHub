@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.request-modal-overlay {&#13;
+  position: fixed;&#13;
+  top: 0; left: 0; right: 0; bottom: 0;&#13;
+  background: rgba(0,0,0,0.45);&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  justify-content: center;&#13;
+  z-index: 999;&#13;
+}&#13;
+&#13;
+.request-modal {&#13;
+  background: #fff;&#13;
+  border-radius: 6px;&#13;
+  padding: 28px;&#13;
+  width: 340px;&#13;
+}&#13;
+&#13;
+.request-modal h3 {&#13;
+  margin: 0 0 14px;&#13;
+  font-size: 18px;&#13;
+  color: #333;&#13;
+}&#13;
+&#13;
+.modal-meta {&#13;
+  font-size: 13px;&#13;
+  color: #777;&#13;
+  margin-bottom: 16px;&#13;
+}&#13;
+&#13;
+.request-modal label {&#13;
+  font-size: 12.5px;&#13;
+  color: #555;&#13;
+  display: block;&#13;
+  margin-bottom: 6px;&#13;
+}&#13;
+&#13;
+.request-modal select {&#13;
+  width: 100%;&#13;
+  padding: 8px;&#13;
+  margin-bottom: 20px;&#13;
+  border: 1px solid #d4d4d4;&#13;
+  border-radius: 4px;&#13;
+}&#13;
+&#13;
+.modal-actions {&#13;
+  display: flex;&#13;
+  justify-content: flex-end;&#13;
+  gap: 10px;&#13;
+}&#13;
+&#13;
+.modal-actions button {&#13;
+  padding: 9px 18px;&#13;
+  font-size: 13px;&#13;
+  border-radius: 4px;&#13;
+  cursor: pointer;&#13;
+}&#13;
+&#13;
+.modal-actions .secondary {&#13;
+  background: #fff;&#13;
+  border: 1px solid #d4d4d4;&#13;
+}&#13;
+&#13;
+.modal-actions .primary {&#13;
+  background: #e60028;&#13;
+  color: white;&#13;
+  border: none;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>CAH Asset Grid</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 13:45:03</sys_created_on>
+        <sys_id>16fbc5a193cfc390929a7c5efaba10f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CAH Asset Grid</sys_name>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name>sp_widget_16fbc5a193cfc390929a7c5efaba10f9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 13:45:03</sys_updated_on>
+        <template><![CDATA[<div class="request-modal-overlay" ng-if="c.data.showModal">
+  <div class="request-modal">
+
+    <h3>Confirm Request</h3>
+
+    <p><strong>{{c.data.selectedAsset.name}}</strong></p>
+    <p class="modal-meta">Condition: {{c.data.selectedAsset.condition}}</p>
+
+    <label>Expected duration</label>
+    <select ng-model="c.data.duration">
+      <option value="7">7 days</option>
+      <option value="14">14 days</option>
+      <option value="30">30 days</option>
+    </select>
+
+    <div class="modal-actions">
+      <button class="secondary" ng-click="c.closeModal()">Cancel</button>
+      <button class="primary" ng-click="c.confirmRequest()">Submit Request</button>
+    </div>
+
+  </div>
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>16fbc5a193cfc390929a7c5efaba10f9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 13:45:02</sys_created_on>
+        <sys_id>055c89a193cfc390929a7c5efaba1007</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 13:45:02</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
