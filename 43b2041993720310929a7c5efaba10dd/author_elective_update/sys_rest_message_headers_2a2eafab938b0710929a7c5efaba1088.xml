@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_headers">
+    <sys_rest_message_headers action="DELETE">
+        <name>Content-Type</name>
+        <rest_message display_value="">a52e6fab938b0710929a7c5efaba10a9</rest_message>
+        <sys_class_name>sys_rest_message_headers</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 06:42:53</sys_created_on>
+        <sys_id>2a2eafab938b0710929a7c5efaba1088</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Content-Type</sys_name>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name>sys_rest_message_headers_2a2eafab938b0710929a7c5efaba1088</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 06:42:53</sys_updated_on>
+        <value>application/json</value>
+    </sys_rest_message_headers>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</application>
+        <file_path/>
+        <instance_id>4e9ea7609334aa54c4e8ddd548373c70</instance_id>
+        <instance_name>dev318629</instance_name>
+        <name>sys_rest_message_headers_2a2eafab938b0710929a7c5efaba1088</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_headers"><sys_rest_message_headers action="INSERT_OR_UPDATE"><name>Content-Type</name><rest_message display_value="">a52e6fab938b0710929a7c5efaba10a9</rest_message><sys_class_name>sys_rest_message_headers</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-07 06:42:53</sys_created_on><sys_id>2a2eafab938b0710929a7c5efaba1088</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Content-Type</sys_name><sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package><sys_policy/><sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope><sys_update_name>sys_rest_message_headers_2a2eafab938b0710929a7c5efaba1088</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-07 06:42:53</sys_updated_on><value>application/json</value></sys_rest_message_headers></record_update>]]></payload>
+        <payload_hash>-1932927001</payload_hash>
+        <record_name>Content-Type</record_name>
+        <reverted_from/>
+        <source>a39f5f8893cb0b50929a7c5efaba1026</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 06:42:53</sys_created_on>
+        <sys_id>61deefeb938b0710929a7c5efaba1023</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a07a9b01540000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 06:42:53</sys_updated_on>
+        <type>HTTP Headers</type>
+        <update_guid>21deefebc48b07105116e8a096446a22</update_guid>
+        <update_guid_history>21deefebc48b07105116e8a096446a22:-1932927001</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 16:21:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_headers">sys_rest_message_headers</sys_db_object>
+        <sys_id>02a724996aa649298bb294219bba91f9</sys_id>
+        <sys_metadata>2a2eafab938b0710929a7c5efaba1088</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Content-Type</sys_name>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_scope_delete display_value="">248b968584134f5d85f4be15a6a969a9</sys_scope_delete>
+        <sys_update_name>sys_rest_message_headers_2a2eafab938b0710929a7c5efaba1088</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_headers_2a2eafab938b0710929a7c5efaba1088">61deefeb938b0710929a7c5efaba1023</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 16:21:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_language">
+    <sys_cs_topic_language action="DELETE">
+        <cs_topic_id display_value="_PRVW__cee30f155ab54110ae8d9fd563359e9e">8f2c2cfa93078310929a7c5efaba10f2</cs_topic_id>
+        <language_code>en</language_code>
+        <nlu_entities>[]</nlu_entities>
+        <nlu_intent>Affirmative</nlu_intent>
+        <nlu_intent_label>Affirmative</nlu_intent_label>
+        <nlu_model>Setup_Topics_Model</nlu_model>
+        <nlu_model_label>Setup Topics Model</nlu_model_label>
+        <nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider>
+        <sys_class_name>sys_cs_topic_language</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-04 08:36:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>1f2c6cfa93078310929a7c5efaba1009</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name>sys_cs_topic_language_1f2c6cfa93078310929a7c5efaba1009</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-04 08:36:57</sys_updated_on>
+    </sys_cs_topic_language>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</application>
+        <file_path/>
+        <instance_id>4e9ea7609334aa54c4e8ddd548373c70</instance_id>
+        <instance_name>dev318629</instance_name>
+        <name>sys_cs_topic_language_1f2c6cfa93078310929a7c5efaba1009</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_language"><sys_cs_topic_language action="INSERT_OR_UPDATE"><cs_topic_id display_value="_PRVW__cee30f155ab54110ae8d9fd563359e9e">8f2c2cfa93078310929a7c5efaba10f2</cs_topic_id><language_code>en</language_code><nlu_entities>[]</nlu_entities><nlu_intent>Affirmative</nlu_intent><nlu_intent_label>Affirmative</nlu_intent_label><nlu_model>Setup_Topics_Model</nlu_model><nlu_model_label>Setup Topics Model</nlu_model_label><nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider><sys_class_name>sys_cs_topic_language</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-04 08:36:57</sys_created_on><sys_domain>global</sys_domain><sys_id>1f2c6cfa93078310929a7c5efaba1009</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package><sys_policy/><sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope><sys_update_name>sys_cs_topic_language_1f2c6cfa93078310929a7c5efaba1009</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-04 08:36:57</sys_updated_on></sys_cs_topic_language></record_update>]]></payload>
+        <payload_hash>-1672465935</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>a39f5f8893cb0b50929a7c5efaba1026</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-04 08:36:57</sys_created_on>
+        <sys_id>d72c6cfa93078310929a7c5efaba100f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a06b905a710000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-04 08:36:57</sys_updated_on>
+        <type>CS Topic Language</type>
+        <update_guid>572c6cfa47078310713f07509673980e</update_guid>
+        <update_guid_history>572c6cfa47078310713f07509673980e:-1672465935</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-04 21:23:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_cs_topic_language">sys_cs_topic_language</sys_db_object>
+        <sys_id>74797f025ace4270b4df5c55d9917d21</sys_id>
+        <sys_metadata>1f2c6cfa93078310929a7c5efaba1009</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_scope_delete display_value="">248b968584134f5d85f4be15a6a969a9</sys_scope_delete>
+        <sys_update_name>sys_cs_topic_language_1f2c6cfa93078310929a7c5efaba1009</sys_update_name>
+        <sys_update_version display_value="sys_cs_topic_language_1f2c6cfa93078310929a7c5efaba1009">d72c6cfa93078310929a7c5efaba100f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-04 21:23:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

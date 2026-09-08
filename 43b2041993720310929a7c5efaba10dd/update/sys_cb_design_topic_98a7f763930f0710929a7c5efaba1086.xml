@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="campus_asset_gemini">9ca7f763930f0710929a7c5efaba107f</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"16e3c76d795d413cadfa30dd4b370cad","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"16e3c76d795d413cadfa30dd4b370cad"}],"goals":[{"name":"primary","trigger_id":"16e3c76d795d413cadfa30dd4b370cad","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":""},"id":"4a7b8b697cf64b3f90e8a5b1707ae6ed","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"f0444220f1064dc7abb1c41db03d7e83","name":"End","expert_mode":false},{"type":"InputPrompt","variable_id":"dcd667f1af3b4a30b41092ef6b3666bd","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"What would you like to know about campus assets?\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":true,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"metadataScript":"","cardName":"","cardFields":[],"id":"da170761b5cf45bb9e199fced83e15f6","name":"Get you Question","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"formatType":"Text","validationScript":"","description":""},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"bye","expression":{"type":"Applicability","mode":"query","value":"get_you_question=bye^ORvaInputs.get_you_question=bye"},"id":"17a1ced056084243bedbf8888416a459","name":"bye","expert_mode":false},{"type":"Branch","label":"Valid Question","expression":{"type":"Applicability","mode":"query","value":""},"id":"5112493671d14b23b658ee5adf58f64e","name":"Valid Question","expert_mode":false}],"id":"71c2aea05d9a414cba2279167b78fad3","goal_id":"primary","expert_mode":false},{"type":"ScriptedAction","script":"(function execute() {\n    try {\n        var r = new sn_ws.RESTMessageV2('Gemini', 'Query');\n        r.setStringParameterNoEscape('prompt', vaInputs.get_you_question);\n        var response = r.execute();\n        var responseBody = response.getBody();\n        var httpStatus = response.getStatusCode();\n\n        if (httpStatus == '200') {\n            var data = JSON.parse(responseBody);\n            vaVars.gptAnswer = data.candidates[0].content.parts[0].text;\n        } else {\n            vaVars.gptAnswer = 'Error contacting Gemini: ' + httpStatus + ' - ' + responseBody;\n        }\n    } catch (ex) {\n        vaVars.gptAnswer = 'Error: ' + ex.message;\n    }\n})();","id":"1e8fedfdba224516bd9772f4bd44c2e4","name":"call gemini","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"script","value":"{{gptAnswer}}"}],"request_feedback":true,"isCollapsible":false,"id":"a71bfe3c78214e1ab9654ed9d34c7ff2","name":"Show Answer","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false}],"edges":[{"type":"Edge","source_node_id":"a71bfe3c78214e1ab9654ed9d34c7ff2","target_node_id":"da170761b5cf45bb9e199fced83e15f6","id":"570480ef15da4eef8f68ee012eac9671"},{"type":"Edge","source_node_id":"4a7b8b697cf64b3f90e8a5b1707ae6ed","target_node_id":"da170761b5cf45bb9e199fced83e15f6","id":"00e70047892745eea6f44fd274b5813e"},{"type":"Edge","source_node_id":"da170761b5cf45bb9e199fced83e15f6","target_node_id":"71c2aea05d9a414cba2279167b78fad3","id":"86d9005bc6fb4ba1bda75feff964eace"},{"type":"Edge","source_node_id":"71c2aea05d9a414cba2279167b78fad3","target_node_id":"f0444220f1064dc7abb1c41db03d7e83","branch_id":"17a1ced056084243bedbf8888416a459","id":"0d8d2ee4364945f98edd55f4b47cd2f0","name":"17a1ced056084243bedbf8888416a459"},{"type":"Edge","source_node_id":"71c2aea05d9a414cba2279167b78fad3","target_node_id":"1e8fedfdba224516bd9772f4bd44c2e4","branch_id":"5112493671d14b23b658ee5adf58f64e","id":"3d47fb9cd4454dd3a169d51c2b08e7ad","name":"5112493671d14b23b658ee5adf58f64e"},{"type":"Edge","source_node_id":"1e8fedfdba224516bd9772f4bd44c2e4","target_node_id":"a71bfe3c78214e1ab9654ed9d34c7ff2","id":"26d2115e5f2d48889752c9ca6539eb04"}],"id":"primary"}],"script_variables":[{"type":"String","name":"gptAnswer","value":{"type":"String","mode":"string"},"list":false,"id":"e7458ed7e1fb49efad04af4413f66806","formatType":"text","secure":false,"sensitive":false,"aiInput":false}],"glide_variables":[{"type":"Reference","table":"sys_user","auto_select":false,"id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"String","name":"get_you_question","list":false,"id":"dcd667f1af3b4a30b41092ef6b3666bd","formatType":"Text","validationScript":"","secure":false,"sensitive":false,"aiInput":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"43b2041993720310929a7c5efaba10dd","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"63d3ec3a93c38310929a7c5efaba1080","name":"campus_asset_gemini","key_phrases":["campus_asset_gemini"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"description":"Ask questions about campus assets, answered using Gemini","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"campus_asset_gemini","library":false,"readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>63d3ec3a93c38310929a7c5efaba1080</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.82",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "4a7b8b697cf64b3f90e8a5b1707ae6ed": {
+          "id": "4a7b8b697cf64b3f90e8a5b1707ae6ed",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "f0444220f1064dc7abb1c41db03d7e83": {
+          "id": "f0444220f1064dc7abb1c41db03d7e83",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "da170761b5cf45bb9e199fced83e15f6": {
+          "id": "da170761b5cf45bb9e199fced83e15f6",
+          "stepType": "TextPrompt",
+          "name": "Get you Question",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "\tWhat would you like to know about campus assets?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "dcd667f1af3b4a30b41092ef6b3666bd",
+          "detailDescription": "",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "requestFeedback": true
+        },
+        "71c2aea05d9a414cba2279167b78fad3": {
+          "id": "71c2aea05d9a414cba2279167b78fad3",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "1e8fedfdba224516bd9772f4bd44c2e4": {
+          "id": "1e8fedfdba224516bd9772f4bd44c2e4",
+          "name": "call gemini",
+          "script": "(function execute() {\n    try {\n        var r = new sn_ws.RESTMessageV2('Gemini', 'Query');\n        r.setStringParameterNoEscape('prompt', vaInputs.get_you_question);\n        var response = r.execute();\n        var responseBody = response.getBody();\n        var httpStatus = response.getStatusCode();\n\n        if (httpStatus == '200') {\n            var data = JSON.parse(responseBody);\n            vaVars.gptAnswer = data.candidates[0].content.parts[0].text;\n        } else {\n            vaVars.gptAnswer = 'Error contacting Gemini: ' + httpStatus + ' - ' + responseBody;\n        }\n    } catch (ex) {\n        vaVars.gptAnswer = 'Error: ' + ex.message;\n    }\n})();",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "a71bfe3c78214e1ab9654ed9d34c7ff2": {
+          "id": "a71bfe3c78214e1ab9654ed9d34c7ff2",
+          "stepType": "TextOutput",
+          "name": "Show Answer",
+          "secure": false,
+          "value": [
+            {
+              "value": "{{gptAnswer}}",
+              "mode": "script"
+            }
+          ],
+          "isCollapsible": false,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "570480ef15da4eef8f68ee012eac9671",
+          "edgeType": "Edge",
+          "source": "a71bfe3c78214e1ab9654ed9d34c7ff2",
+          "target": "da170761b5cf45bb9e199fced83e15f6",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "00e70047892745eea6f44fd274b5813e",
+          "edgeType": "Edge",
+          "source": "4a7b8b697cf64b3f90e8a5b1707ae6ed",
+          "target": "da170761b5cf45bb9e199fced83e15f6",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "86d9005bc6fb4ba1bda75feff964eace",
+          "edgeType": "Edge",
+          "source": "da170761b5cf45bb9e199fced83e15f6",
+          "target": "71c2aea05d9a414cba2279167b78fad3",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "0d8d2ee4364945f98edd55f4b47cd2f0",
+          "edgeType": "Branch",
+          "source": "71c2aea05d9a414cba2279167b78fad3",
+          "target": "f0444220f1064dc7abb1c41db03d7e83",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.get_you_question=bye^ORvaInputs.get_you_question=bye",
+            "mode": "query"
+          },
+          "label": "bye"
+        },
+        {
+          "id": "3d47fb9cd4454dd3a169d51c2b08e7ad",
+          "edgeType": "Branch",
+          "source": "71c2aea05d9a414cba2279167b78fad3",
+          "target": "1e8fedfdba224516bd9772f4bd44c2e4",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "mode": "query",
+            "value": ""
+          },
+          "label": "Valid Question"
+        },
+        {
+          "id": "26d2115e5f2d48889752c9ca6539eb04",
+          "edgeType": "Edge",
+          "source": "1e8fedfdba224516bd9772f4bd44c2e4",
+          "target": "a71bfe3c78214e1ab9654ed9d34c7ff2",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "dcd667f1af3b4a30b41092ef6b3666bd": {
+      "id": "dcd667f1af3b4a30b41092ef6b3666bd",
+      "name": "get_you_question",
+      "label": "Get You Question",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTc4ODUwODkyOTYxMyBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "da170761b5cf45bb9e199fced83e15f6",
+      "isHidden": false
+    },
+    "e7458ed7e1fb49efad04af4413f66806": {
+      "id": "e7458ed7e1fb49efad04af4413f66806",
+      "value": {
+        "value": "",
+        "mode": "simple"
+      },
+      "name": "gptAnswer",
+      "label": "gptAnswer",
+      "varType": "script",
+      "category": "vaVars"
+    }
+  }
+}</graph>
+        <name>campus_asset_gemini</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 07:21:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>98a7f763930f0710929a7c5efaba1086</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name>sys_cb_design_topic_98a7f763930f0710929a7c5efaba1086</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 07:21:18</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

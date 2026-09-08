@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_extended_once" label="Extended Once" language="en" table="u_asset_allocation">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_extended_once</element>
+            <help/>
+            <hint/>
+            <label>Extended Once</label>
+            <language>en</language>
+            <name>u_asset_allocation</name>
+            <plural>Extended Onces</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-08 08:52:02</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Extended Once</sys_name>
+            <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+            <sys_update_name>sys_documentation_u_asset_allocation_u_extended_once_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-08 08:52:02</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

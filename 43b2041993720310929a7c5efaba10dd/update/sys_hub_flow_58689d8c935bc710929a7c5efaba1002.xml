@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=714000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Just like we did for the checkout, we need a quick flow to process the return when they scan it.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>process_mobile_checkin</internal_name>
+        <label_cache>[{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"25e240bb-cf26-4702-9a1f-1c0f8df72dc2":["requested_item"]},"attributes":{"default_search_field":"number"}},{"name":"undefined","label":" - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record","usedInstances":{"376f4988-8a52-446c-87d8-192a5f1a5100":[null]},"attributes":{}},{"name":"25e240bb-cf26-4702-9a1f-1c0f8df72dc2.asset_tag_scan","label":"1 - Get Catalog Variables➛asset_tag_scan","reference":"","reference_display":"asset_tag_scan","type":"string","base_type":"string","usedInstances":{"376f4988-8a52-446c-87d8-192a5f1a5100":[null,"conditions"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"376f4988-8a52-446c-87d8-192a5f1a5100.Record","label":"2 - Look Up Record➛Asset Allocation Record","reference":"u_asset_allocation","reference_display":"Asset Allocation","type":"reference","base_type":"reference","usedInstances":{"d2d3c493-6b00-422b-9ab2-a63205e756cf":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>b61b5d04939bc710929a7c5efaba109b</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Process Mobile Check-in</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>4b1b9d04939bc710929a7c5efaba100f</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:02:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>58689d8c935bc710929a7c5efaba1002</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Process Mobile Check-in</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name>sys_hub_flow_58689d8c935bc710929a7c5efaba1002</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:14:25</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>931b9d04939bc710929a7c5efaba106c</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=58689d8c935bc710929a7c5efaba1002"/>
+    <sys_variable_value action="delete_multiple" query="document_key=58689d8c935bc710929a7c5efaba1002"/>
+    <sys_flow_catalog_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <catalog_item/>
+        <name/>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <sys_class_name>sys_flow_catalog_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:14:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4b1b9d04939bc710929a7c5efaba100f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:14:25</sys_updated_on>
+        <trigger_definition/>
+    </sys_flow_catalog_trigger>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=58689d8c935bc710929a7c5efaba1002"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=58689d8c935bc710929a7c5efaba1002"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=58689d8c935bc710929a7c5efaba1002^sys_idNOT IN9c689d8c935bc710929a7c5efaba1003"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>58689d8c935bc710929a7c5efaba1002</id>
+        <name>Process Mobile Check-in</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:02:30</sys_created_on>
+        <sys_id>9c689d8c935bc710929a7c5efaba1003</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:02:30</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=9c689d8c935bc710929a7c5efaba1003"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=58689d8c935bc710929a7c5efaba1002^sys_idNOT IN207891cc935bc710929a7c5efaba1029,b47891cc935bc710929a7c5efaba10b0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Process Mobile Check-in">58689d8c935bc710929a7c5efaba1002</model>
+        <model_id>58689d8c935bc710929a7c5efaba1002</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_58689d8c935bc710929a7c5efaba1002</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:02:47</sys_created_on>
+        <sys_id>207891cc935bc710929a7c5efaba1029</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:14:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=207891cc935bc710929a7c5efaba1029"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Process Mobile Check-in">58689d8c935bc710929a7c5efaba1002</model>
+        <model_id>58689d8c935bc710929a7c5efaba1002</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_58689d8c935bc710929a7c5efaba1002</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:02:47</sys_created_on>
+        <sys_id>b47891cc935bc710929a7c5efaba10b0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:14:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b47891cc935bc710929a7c5efaba10b0"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=58689d8c935bc710929a7c5efaba1002"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=58689d8c935bc710929a7c5efaba1002"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=58689d8c935bc710929a7c5efaba1002^sys_idNOT IN987851cc935bc710929a7c5efaba1095"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Process Mobile Check-in">58689d8c935bc710929a7c5efaba1002</flow>
+        <generation_source/>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:02:46</sys_created_on>
+        <sys_id>987851cc935bc710929a7c5efaba1095</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:14:24</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/61TXWvbMBT9K0FPG3hgJ2uz+G0UCoFuhabrSxlGka4SMVlyJdmtF/rfd29sJ2nnjUH3Jt2vc3TP0f2OGb4Gw3J2U9vJpXGPk6VlCdM2grfc3LYVYFJsnRaA8e5wpUNk+f2OqRU81GAxlX/IEqbuuKmpfs3Fj413tZXYo65OIBRBaDs5VkzeSVC8NvE91S5LvqEJdF6BARFBslxxEwAj38Lp7YsOQdtNH3hO/sxHOQ9/5/Oy4g0svies5Fby6Hx7LPKuvIWyMjzCIei8BM/yLE0T1hDRVRuWskO1vCR8X9uCGBaaRGn61+BR6oDD2rtjRGy1kR4s6oIUKu5xQqT5u1epiJIWg+oXg7CagM/TRSrm08V8Pk1nszRVZ2sllBDzT1l6np0tsG7cLqN04yvvnL4XniJYebLG33fmgctra46BLZqye2vJn4L+icM/plSnwHeaU+5wLfodDeshFmHvWvPvfmzGDN0/JCXHjc164aVmzILDKsgtPdrF/yeYvZnglAh2q7uuonZoITYjafnaUE9oQye4B4EtRfR6s8FGbHKmLu3XMV/07E+8WwdUCypyBEk8fJrV1j3eDHJearun1CeNE9wcbjwi8rqOtL8d47Lh2EGOjh4xnveuKB5q6tj/ngGr2L+ICoLwuoqfRdQNHL7yL2htBDgfBQAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=58689d8c935bc710929a7c5efaba1002^sys_idNOT IN3d8811cc935bc710929a7c5efaba1037,47b895cc935bc710929a7c5efaba1069,be7ad5c0939bc710929a7c5efaba1050"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Process Mobile Check-in">58689d8c935bc710929a7c5efaba1002</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:03:08</sys_created_on>
+        <sys_id>3d8811cc935bc710929a7c5efaba1037</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:14:24</sys_updated_on>
+        <ui_id>25e240bb-cf26-4702-9a1f-1c0f8df72dc2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VUTU/jMBD9K1HO3SppgJLeWFZIe2CR6IoLQpbjTBoLxw6209Kt+t93nDht+SoVAmmlPWYyH++9mefbVcjzcBJmRZTRhGYsiaM4iaLR6VGcnSRZPMoTCkDDQShpBZip4aEBYyEn3EKF8TkVjfuxWk1BzzmD4JxaKtSMxEOf3Kau15icc1MLurzxNRhhJRe5BhlObu8GYU01jrGgw8nq2S+7rIEImoHAwmsoAP8wwA6HEuhrp01WcYsMgusO3h5ybmgb345TOnfwokEIjxZkDji+oMLAIKyozKlVehlOrG4woIHmV1IsNxkll7bjXdFHw/9g82Q02Ok/CQ0jCKMHsPlDvHQteY8y+NklsVKh7le15Up23S3NRC+wEk0lf3UE3QqgoI2wOytoDHaH2nFx6DzUYlqqxUbnCy5b2v6nUIyKzRe1VvOssWDc2kBAhY1IReuayxmptZrzthixVMOZwI9hIdQChxo+k0PKHPAhSkeHFxj/0YZvqOaOxSW2wWIUHoUkuVZ17ck5jcN1qxF5aByejp9nQjoxMMEwzWt7hmPm4EGvB/3lZ/sOp4i3x4Fa4wIsEObv+5kBTpKjcZ6y0zQ5ztg4jtJRSsfsGOXOaByd0pfnf6kyLiA4MwZscF4Cu//G5Sd64n1qfe1vz633bntZJsB7Dvo9BFOw5n013nZM/GWOscQszRMghmBjMvfQiemgv2am9wn/H+7iBp+dSuFCW3ZkV+DWaG4VOcYbaXkFpL16wiVRtZlzWGzTDDJDxalm5WeZdLz/ksfbs+yPoF+92THoMdBxmkbsdYOm0cRdDvJxehGJlF4Y9gMdPublqWhMGXxv2D3Y3s4HiNCX90d9s6PCHoG8Z40bmvUzvWtH+13rI4fYNh5FUfTUuW948p8zHZqjwMcOZdjqhvuFVpSwLcGhX2XNA33HJRMNZlYoBdc4ZQPVvWObNCfNDgjQZKG7SZuUWmONnrt3UwCzLcne3KrRzL8RGH1+7x81+t1fgY+nIYkKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3d8811cc935bc710929a7c5efaba1037"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Process Mobile Check-in">58689d8c935bc710929a7c5efaba1002</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:04:03</sys_created_on>
+        <sys_id>47b895cc935bc710929a7c5efaba1069</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:14:24</sys_updated_on>
+        <ui_id>376f4988-8a52-446c-87d8-192a5f1a5100</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VY227bOBD9FUHPtleSL7LzFjQIUGC3AdJuX7IpQfESE0uTKkklTQL/e4eiJDuxkziOd5s+khzOnJk5c0T74j4WND6K6SyZ8dlsPM2TZDhMkslkSHBaFMMJKZICj+JerPCCgaXDhWSwvMay8usKYWuZQ1hKTbATWsEhFbaU+PZrY3PsLaLjdQsyF5IapuKji8teXGID3h0z8dH9oyN3WzIkccEkOPrig0efPJLezsAfXN5MxAdol0gF19pQjyXpxeyHY4oyCMWxtKwXL7Ci2Glz2+0YhumZkquNuVAOPMbe+IcVd+B+mng7ziAtwsJZt0RNtcI2mWtB2FlZ16neCUDDoZbVQn0KCfg6M44r6do6w05lwR8rPWYPokHEP8/1zXkb8FSoOr3m0HdFdivsnBFF5Zj1vWCSLcARWuCyFOoKlUZfi/oyYFkMriQsBlzqGwhqxZUaYOKBD6BEeHAK+yf19ldshM/iL3ADlwGQkNBtFIpudWXqqlwjIitbHxisbPAVL+taoe+VRxmybvJDoURgYIkRpTuGC9esSWXZa7k9fpYisxUliFZU+Jj2IcE74iLrsKvsPxV4os02o9/Ozp800tfM0Ip9q9AcG3qDDQvzMghT4/BVsLu/z8YsGyVF0Sc8m/RHeZL1Zzjl/ZQkfEp5nlGSrW4hS7BaLjdn7b3D3W/wP6x3Zteubr28rdWNBDzYayQgPZgEjJLkF4mAM9X704CXpjokvH20282aNKumwWqbDiw7JUjps5yhK3pYbRwKhV6Tgs1p25vQp4JJ+uBLtgO49vKZ52ZU3D6Ft+Ez9zEefdKy3/6T9kY2c4pCXYSSQtVffnAIYd4fzTvejp+lRpE+4kHd/hVr6z1sySZ7ceR0dLe/KNd9bfm7A8j24mdAFH0JKLcAb+W4dd9Qd3gw6g6z11EXiHNx36HvqralwO3D0beutb/z9vixPZBo7UK6vOyo/2G/mOlrY2Y+5qPZHL5qONeZFU5OniDYgZ+l//MQ93zAOVxt4qEwrOhG0CvmVtFbK6rdDZb/bjtv2NXNUJ3em5+46bO/goq1J67gaAF9EiW8uw0jQAWL/CuP60pR1Ly41x6/0DcujHWN8aaGnDNXGRVpGLnIzVlUW0ed9SGUZYfs2osfedSm12CwEaQX1elFXXqvK8YTejQ64NPwLXp0ioWsSw+/nMq13jFjtHlCk17o2jPt31GwdgSVHhTU2xVtG9+3KtsLWH+Ln+FvVR3CcDHK8CQfpmmSpAnNk2mep9NJwSc4H/HVoCFkFQFZBM8ciAHuUUuEtqvJprQEbdz7vyLQ3D9OGxe74m0vn2jlf+hmuYs8YOhz1AJ+OaVGLwqtJcNqRc/xLxOM9/J3UiX8q+/PbR36r77cIeSDdlTibyW+V+yjJ8WUJdk0paQ/zdO8P+J00p9RPO7jWTHOh5SREd//+3z5E1vwHQ5gFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=47b895cc935bc710929a7c5efaba1069"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Process Mobile Check-in">58689d8c935bc710929a7c5efaba1002</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:11:40</sys_created_on>
+        <sys_id>be7ad5c0939bc710929a7c5efaba1050</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:14:24</sys_updated_on>
+        <ui_id>d2d3c493-6b00-422b-9ab2-a63205e756cf</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXU/bMBT9K1WeNqmtkqYtafeEVDHtYSAxxAsw6za+AUuOk8VOoavy33cdO6UFxhCqNE1a3u7N/Tjn+NhXm0DwYB6MkYfRLJqmcRTHozAcJeNoOY2X0YjHgBgF/UBBjlRZYVpUnOIVyNomNpv4aJqNZ0kySGAyGozH03SQHPFkEM1GMMkimERhODxv+5qGOrnQpYT1pR9AmfROSF6hCuZXN/2ghIp2GayC+ebJL7MukUlYoqTGRZHWOSrT+7KgGW/l0XWfd0SeErM7KOZ+OhM2Sb8snijsB/hgUHGkdRlIjf0gB8XBFNU6mJuqpkSFwM+UXG8r7oQyjmkOD1r8pPnj0NZlSNRSr8I2ZF6hTpxCpHhWGlEolzGwlJ1yhaxzdeooWG0xg1qaHW1rTfOwtJAtCIcw+3ZX3J93+06Eatl5tLJIQW4jMKYSy9qgtseBEltRcihLoW5ZWRUr0TYTlHx4KykYZrK4p51a3KohpBb3kASC4QnlF236EiphSXylMdTctOTZj9rudTQ8YNZybgmz9qCoVKeVKM0xDV6hh9n0vZGXk9cMkM4ez3tn5qOZawZao2EgrQit4s/8emwrese7Fe/z74VF0Dt1CN6Kfq/5N2y8g/dy3sCTgxk4+UsG9oj+MQf/ybfh6NWHa+ekW6vqfc9uvci0AVPr6zoMY3KdqSuF/DtVpIaQMZdhRAVdScYHDhXy50Y/3OB33g/MCY7BngPUf7NS3YATgZLrF6TrLohfwFZ+wfaVP9gtiaZh+/1/7A/y2DtCLmcRvmRAm3+tK3C1PYX3vc+WwoKaLkSOHz5+IjQaVsi3kjZNc/ML1smZnyUJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=be7ad5c0939bc710929a7c5efaba1050"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=58689d8c935bc710929a7c5efaba1002"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=58689d8c935bc710929a7c5efaba1002"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=58689d8c935bc710929a7c5efaba1002"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=58689d8c935bc710929a7c5efaba1002"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_58689d8c935bc710929a7c5efaba1002</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:02:47</sys_created_on>
+        <sys_id>607891cc935bc710929a7c5efaba10ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:02:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_58689d8c935bc710929a7c5efaba1002</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:02:48</sys_created_on>
+        <sys_id>b07891cc935bc710929a7c5efaba10cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:02:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_58689d8c935bc710929a7c5efaba1002"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_58689d8c935bc710929a7c5efaba1002"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Just like we did for the checkout, we need a quick flow to process the return when they scan it.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>process_mobile_checkin</internal_name>
+        <label_cache>[{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"25e240bb-cf26-4702-9a1f-1c0f8df72dc2":["requested_item"]},"attributes":{"default_search_field":"number"}},{"name":"undefined","label":" - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record","usedInstances":{"376f4988-8a52-446c-87d8-192a5f1a5100":[null]},"attributes":{}},{"name":"25e240bb-cf26-4702-9a1f-1c0f8df72dc2.asset_tag_scan","label":"1 - Get Catalog Variables➛asset_tag_scan","reference":"","reference_display":"asset_tag_scan","type":"string","base_type":"string","usedInstances":{"376f4988-8a52-446c-87d8-192a5f1a5100":[null,"conditions"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"376f4988-8a52-446c-87d8-192a5f1a5100.Record","label":"2 - Look Up Record➛Asset Allocation Record","reference":"u_asset_allocation","reference_display":"Asset Allocation","type":"reference","base_type":"reference","usedInstances":{"d2d3c493-6b00-422b-9ab2-a63205e756cf":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Process Mobile Check-in</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Process Mobile Check-in">58689d8c935bc710929a7c5efaba1002</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:14:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b61b5d04939bc710929a7c5efaba109b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:14:25</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=b61b5d04939bc710929a7c5efaba109b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b61b5d04939bc710929a7c5efaba109b"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b61b5d04939bc710929a7c5efaba109b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b61b5d04939bc710929a7c5efaba109b^sys_idNOT IN7e1b5d04939bc710929a7c5efaba10b5"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b61b5d04939bc710929a7c5efaba109b</id>
+        <name>Process Mobile Check-in</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:14:25</sys_created_on>
+        <sys_id>7e1b5d04939bc710929a7c5efaba10b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:14:25</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=7e1b5d04939bc710929a7c5efaba10b5"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b61b5d04939bc710929a7c5efaba109b^sys_idNOT IN471b5d04939bc710929a7c5efaba10de,761b5d04939bc710929a7c5efaba10b7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Process Mobile Check-in">b61b5d04939bc710929a7c5efaba109b</model>
+        <model_id>b61b5d04939bc710929a7c5efaba109b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b61b5d04939bc710929a7c5efaba109b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:14:25</sys_created_on>
+        <sys_id>471b5d04939bc710929a7c5efaba10de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:14:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=471b5d04939bc710929a7c5efaba10de"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Process Mobile Check-in">b61b5d04939bc710929a7c5efaba109b</model>
+        <model_id>b61b5d04939bc710929a7c5efaba109b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b61b5d04939bc710929a7c5efaba109b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:14:25</sys_created_on>
+        <sys_id>761b5d04939bc710929a7c5efaba10b7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:14:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=761b5d04939bc710929a7c5efaba10b7"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=b61b5d04939bc710929a7c5efaba109b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b61b5d04939bc710929a7c5efaba109b"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=b61b5d04939bc710929a7c5efaba109b^sys_idNOT IN031b5d04939bc710929a7c5efaba10f7"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Process Mobile Check-in">b61b5d04939bc710929a7c5efaba109b</flow>
+        <generation_source/>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:14:25</sys_created_on>
+        <sys_id>031b5d04939bc710929a7c5efaba10f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:14:25</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/61TXWvbMBT9K0FPG3hgJ2uz+G0UCoFuhabrSxlGka4SMVlyJdmtF/rfd29sJ2nnjUH3Jt2vc3TP0f2OGb4Gw3J2U9vJpXGPk6VlCdM2grfc3LYVYFJsnRaA8e5wpUNk+f2OqRU81GAxlX/IEqbuuKmpfs3Fj413tZXYo65OIBRBaDs5VkzeSVC8NvE91S5LvqEJdF6BARFBslxxEwAj38Lp7YsOQdtNH3hO/sxHOQ9/5/Oy4g0svies5Fby6Hx7LPKuvIWyMjzCIei8BM/yLE0T1hDRVRuWskO1vCR8X9uCGBaaRGn61+BR6oDD2rtjRGy1kR4s6oIUKu5xQqT5u1epiJIWg+oXg7CagM/TRSrm08V8Pk1nszRVZ2sllBDzT1l6np0tsG7cLqN04yvvnL4XniJYebLG33fmgctra46BLZqye2vJn4L+icM/plSnwHeaU+5wLfodDeshFmHvWvPvfmzGDN0/JCXHjc164aVmzILDKsgtPdrF/yeYvZnglAh2q7uuonZoITYjafnaUE9oQye4B4EtRfR6s8FGbHKmLu3XMV/07E+8WwdUCypyBEk8fJrV1j3eDHJearun1CeNE9wcbjwi8rqOtL8d47Lh2EGOjh4xnveuKB5q6tj/ngGr2L+ICoLwuoqfRdQNHL7yL2htBDgfBQAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=b61b5d04939bc710929a7c5efaba109b^sys_idNOT IN071b5d04939bc710929a7c5efaba10f4,8b1b5d04939bc710929a7c5efaba10f5,cb1b5d04939bc710929a7c5efaba10f2"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Mobile Check-in">b61b5d04939bc710929a7c5efaba109b</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:14:25</sys_created_on>
+        <sys_id>071b5d04939bc710929a7c5efaba10f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:14:25</sys_updated_on>
+        <ui_id>376f4988-8a52-446c-87d8-192a5f1a5100</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOtleSP2TnFiQwUKDbAEm2l25LUCRlE0tTKkklTQz/9w5FSfbaSmxhHSDBHjkckm9m3jxS+rb2OfUvfDoLZulsNp7GQTAcBsFkMiQ4TJLhhCRBgkd+z5d4xcDT4EQwGD5gUdhxgbDWzCAsREaw4ZmEScp1LvDT18rn0np4l7seZMkFVUz6F9++9/wcK9jdMOVfrPemToUncMIEuN5X+Pbgmqe8GaJyztk+7y7zvriJTFELJej57JdhkjLAkGKhWc9fYUmxydRTY1EM0xsptoYllwZ29K3zL82f4dxpYP1SBlER5uaaIaqS5czpNTb4zqiCmEJVrmSZccK0ywdlKS6Eudq1OYebvMxtucSF7VZnoljJLy4dfrNBXRuwFBpAsNwGapFXYaR3y+zxtkY557LMSTVpKymaETZG8aQwFs/aZ4KtYCO0wnnO5QLlKnvg5WLAshosBAwGqcge4VDNF3KAiQU+gLziwRzs16X5K1bcRvEnbAOLARAXwBDkSqizQpWpfEBEFLqcUFhqt5e/6fn6SV8J4OY2ckg5+llY3C4PVcTIJc0uIYrn5hK2eGBVcJte3SHjVyk421KOZJJyi0L/u00a+iNtsCn03wXsRCszoz9ubl90yh6YogX7UaAlVvQRK+a6buB6z+CF81uvozGLRkGS9EkaTfqjOIj6Mxym/ZAE6ZSmcURJtF2FNMFyszns2PcOt6N8HK9dLR9Xu8VrK2glJAe2z20bVEISnk1IRkHwkaQEDn9/StJdG1wK2gWiNpbU29YeRm1qsmn0JKSvcpJu6aczZZBL/Y6gHPZs57Y4AULdFjeWyF7y9BKqqitSzgRtu17ndmLveo3+n9fru+wJAESRqx6XgsvyrQRAz9wsDfvHr1IvCfd4VtJry/3ShjU57AHsmcx77twJJ8CpO+EOzvbuHZ4WiPX1UFJm/2qojVUDDM/WAMPoPA2wbsJsEtmS8/p5bKtZ+z9bf7zvDxTcWRBu2hqs05lh1zOjzWEDDzt18C7Z3Mz1C5w78zv6hY7svaUELGFpdR5y/YseOV0wsz299qKZecTin7b5inGoLlQZ3hu8ycNXPwuTnTc5T9EKKsdz+HRQjAA5NLLP0jQrJEXVR8POax0qmXKlTeV8KDS3DPpHehk0pmeWzCu9vca740V8PI46lZ9Srw6kOk17EIhXBuI1gXQLu4tojc74lj23aM0xF2U14Hsw3yknUypTLwjXkUK+wogTVe1EUOFZQf132WtrgVb5O4L1Q/xcOL80EYaTUYQn8TAMgyAMaBxM4zicTpJ0guNRuu1RhLQkoKawcwpUge1RTY26zsGh/jhJ7So0J6CqKXidSfuRHsXGs7Cgvl4N6zjwSlCSLBMMyz1FuYd74o95hb/i6/jdqcqH+NVW8Pv9TDtTa67f6t1Q8L8k/1mwT5ZiUxZE05CS/jQO4/4opZP+jOJxH8+ScTykjIzScz4Fvv8Gk72gfcIWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=071b5d04939bc710929a7c5efaba10f4"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Mobile Check-in">b61b5d04939bc710929a7c5efaba109b</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:14:25</sys_created_on>
+        <sys_id>8b1b5d04939bc710929a7c5efaba10f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:14:25</sys_updated_on>
+        <ui_id>d2d3c493-6b00-422b-9ab2-a63205e756cf</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VV30/bMBD+Vyo/bVJbJf1F2j0hKqZJDCRAfWEsusYXsOQ4WewUuir/+86xEzpADCRe0Prm8935+767r7naMcHZgk2QB+E8nCXjcDweBcEomoTr2XgdjvgYEEPWZwoypMwSk7zkdN6ArGxgtxsfzNLJPIoGEUxHg8lklgyiAx4NwvkIpmkI0zAIhudNXV1TJRe6kLBd+QYUSW6F5CUqtri67rMCSnrLYMkWu0dXrwUrYY2SUs9btI/Rm21hzzxPqgyViUUbPPGVS3/T+7akGyqycMKgz/DeoOJIQFKQGvssA8XB5OWWLUxZUaBE4GdKbruMW6GMI5rBvRa/6eVJYPNSJGaJF6E7xl4gF06XYOCCOiemKju9cpGgdppwTKGS5mg/5hLOCiNy5UoMrGVbncsqU6dOEdY12JtHpQkEFpanRe5opRe3+d15C/JYqEYST1HmCcjuBMaUYl0ZC2fHUGKjcQZFIdRNXJT5RjTFBCUb3kg6DFOZ39GbWtyoISQW95BUheExxZdNeAWlsCS+UxsqrvtMb/WRBK0fqJCG8a/KInHEPIW4UaGRIG42wRYnpSjMIT21QQ+87ns7rKcvbVgyf1iovZ4PlqhiAoUmBmllaWbwZOsPbUbvcD/jbS54BcbWBZfN7J/H7I3wJHayX9s7dRfeBtN3s0H0kWzgaXx4H/xr+4PRi/+ve5vULLz+e/O7jY61AVPpH1UQjGl3aWwK+U/KoAmCjF0kJnLoUlI+cKiQP7XL+zV+m8teoUXrsmOBkutnxGkthhkxMhg7sR7ZzF/2Vv6y++K8m9fCWdD8PpDj/oMPj6PoYhbzc2ts4y9VMZfbU3jX+2pJ0eTwUmT46fMXQqNhg7wTua7r6z8EAxpN9wkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8b1b5d04939bc710929a7c5efaba10f5"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>330ba3abc31013002841b63b12d3aee8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Process Mobile Check-in">b61b5d04939bc710929a7c5efaba109b</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:14:25</sys_created_on>
+        <sys_id>cb1b5d04939bc710929a7c5efaba10f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:14:25</sys_updated_on>
+        <ui_id>25e240bb-cf26-4702-9a1f-1c0f8df72dc2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/91UUU/bMBD+K5GfuyppgdK+sSKkSWNIdOIFIctxLq2F4wTbaekq/vvOiZOGwkqZxqTt0eez7/vu7vtuN0QkZELiNIzZkMV8GIXRMAwHp0dRfDKMo0EyZACM9IhiGWCmhocSjIWECgsZxpdMlu5is5mBXgoOwZRZJvM5jfo+uUp9esLkRJhCsvWNf4MRvhAy0aDI5PauRwqmsYwFTSabnatDcUoWg8TUWRlnwiLQ4LpGsYeDXRd1PAWsx8GHvvqvrjvxXCcOXdgj8GhBJYCwUiYN9EjGVMJsrtdkYnWJAQ0suVJy3WYshLI17Yw9GvEDiw4HvU7dCTGcIrwGWHtDfecqNB598KVOSs+x4TMsyW2p27bmOApTty6BlJXSTruxOuGqsCJX9RPLYtm8zmWZqW91t0j7QWdspUFIULgGOEqeXzpb5Ku2WxdCVb3ylzLnTHZSgWm+uBAg3WBVmcWY2yPMWi3i0jqcGwISMixAM1YUQs1pofOlqD5FjFl/LvHQT2W+QjBGzFWfcUeoj3Ng/QuMn1fhG6aFY3eJ31RVcpwKTXReFJ60Gxh56hGzNlPJjNlyxxHQh9IhrzvhOdO6be4J16KwZ1h4CZ7eU6/RVbxvX9Nou5M4SpyvBcq9enbkdTI8GiVjfjoeHsd8FIXjwZiN+DEOJmZReMpeiusyj4WE4MwYsMF0Afz+k1DvV9zbDBrFffcUGgOo9tMEqIqgGUAwA2veJv1+PUYfpkdLcSeeATQUP6ZLT4mamtJrUn27Ef+Fdl2tv6VcYdAfsxx3puJMu7OqRIyCRCI4FQdxG1xgPapLZUUGtBIVFYrmhVkKWH2cAYz2y2e01UKzYc1emY74j4GNxuOQvy7+cThxa4lkXAepQj4vzOA3fnifTxxAtPGJRhU3HaZ7muDNwMjSLOKS34PdsYOZuwk+N1feEQb7HcFHDrGEaBCG4XNX+IXe/1VBP5cuSixFV8bebeeAOwFVJ0n1BIt+lMAPEiouneKyxMwMWyE0VmmhOmNt01xrOiBA05WuK7UphcY3eumMXAK3FcnGSfJSc+80GN3VyJ+zi7ufxhDYaIkLAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cb1b5d04939bc710929a7c5efaba10f2"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=b61b5d04939bc710929a7c5efaba109b"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=b61b5d04939bc710929a7c5efaba109b"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b61b5d04939bc710929a7c5efaba109b"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b61b5d04939bc710929a7c5efaba109b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b61b5d04939bc710929a7c5efaba109b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:14:25</sys_created_on>
+        <sys_id>871b5d04939bc710929a7c5efaba10cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:14:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b61b5d04939bc710929a7c5efaba109b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:14:25</sys_created_on>
+        <sys_id>8b1b5d04939bc710929a7c5efaba10e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:14:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b61b5d04939bc710929a7c5efaba109b"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b61b5d04939bc710929a7c5efaba109b"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>58689d8c935bc710929a7c5efaba1002</sys_id>
+        <latest_snapshot>b61b5d04939bc710929a7c5efaba109b</latest_snapshot>
+        <compiler_build/>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=58689d8c935bc710929a7c5efaba1002^sys_idNOT INc71b9d04939bc710929a7c5efaba1010"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>58689d8c935bc710929a7c5efaba1002</plan_id>
+        <snapshot>b61b5d04939bc710929a7c5efaba109b</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-08 09:14:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c71b9d04939bc710929a7c5efaba1010</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-08 09:14:25</sys_updated_on>
+        <trigger display_value="">4b1b9d04939bc710929a7c5efaba100f</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=58689d8c935bc710929a7c5efaba1002"/>
+</record_update>
