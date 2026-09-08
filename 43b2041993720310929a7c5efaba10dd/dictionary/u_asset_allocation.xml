@@ -11,6 +11,7 @@
         <element label="Allocated to" max_length="32" name="u_allocated_to" reference="sys_user" type="reference"/>
         <element label="Textbook" max_length="32" name="u_textbook" reference="u_textbook" type="reference"/>
         <element label="Allocation Date" max_length="40" name="u_allocation_date" type="glide_date"/>
+        <element label="Extended Once" max_length="40" name="u_extended_once" type="boolean"/>
         <element label="Hardware Asset" max_length="32" name="u_hardware_asset" reference="u_campus_hardware_asset" type="reference"/>
         <element label="Actual Return Date" max_length="40" name="u_actual_return_date" type="glide_date"/>
         <element label="Expected Return Date" max_length="40" name="u_expected_return_date" type="glide_date"/>
