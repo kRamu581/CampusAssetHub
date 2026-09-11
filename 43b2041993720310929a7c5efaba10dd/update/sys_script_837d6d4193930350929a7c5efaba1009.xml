@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>u_asset_allocation</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Simulate AI Risk PredictionSimulate AI R</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+    
+    // Simulate the ML API Prediction based on what they checked out
+    if (!current.u_hardware_asset.nil()) {
+        // High Value items like laptops get flagged as High Risk
+        current.u_predicted_return_risk = 'High Risk'; // Change this if your choice value is different
+        gs.addInfoMessage("]]>🧠<![CDATA[ Now Assist AI Prediction: This checkout has a HIGH RISK of being returned late based on historical hardware trends.");
+    } else if (!current.u_textbook.nil()) {
+        // Textbooks are lower risk
+        current.u_predicted_return_risk = 'Low Risk'; // Change this if your choice value is different
+        gs.addInfoMessage("]]>🧠<![CDATA[ Now Assist AI Prediction: This textbook checkout is calculated as LOW RISK.");
+    }
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 13:09:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>837d6d4193930350929a7c5efaba1009</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Simulate AI Risk PredictionSimulate AI R</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name>sys_script_837d6d4193930350929a7c5efaba1009</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 13:09:56</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=837d6d4193930350929a7c5efaba1009"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>837d6d4193930350929a7c5efaba1009</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-11 13:09:55</sys_created_on>
+        <sys_id>8acd258193930350929a7c5efaba100c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-11 13:09:55</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -9,6 +9,13 @@
             </choice>
         </element>
         <element label="Allocated to" max_length="32" name="u_allocated_to" reference="sys_user" type="reference"/>
+        <element choice="3" label="Predicted Return Risk" max_length="40" name="u_predicted_return_risk" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="High Risk" sequence="2" value="high_risk"/>
+                <element inactive_on_update="false" label="Low Risk" sequence="0" value="low_risk"/>
+                <element inactive_on_update="false" label="Medium Risk" sequence="1" value="medium_risk"/>
+            </choice>
+        </element>
         <element label="Textbook" max_length="32" name="u_textbook" reference="u_textbook" type="reference"/>
         <element label="Allocation Date" max_length="40" name="u_allocation_date" type="glide_date"/>
         <element label="Extended Once" max_length="40" name="u_extended_once" type="boolean"/>
