@@ -4,13 +4,13 @@
             <element>u_allocated_to</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-08-18 11:31:58</sys_created_on>
-            <sys_id>1131391593324310929a7c5efaba102f</sys_id>
+            <sys_created_on>2026-09-11 12:46:29</sys_created_on>
+            <sys_id>3668a98593530350929a7c5efaba10c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_asset_allocation" sys_domain="global" view="Default view">41af215193324310929a7c5efaba104e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-08-18 11:31:58</sys_updated_on>
+            <sys_updated_on>2026-09-11 12:46:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>u_textbook</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-08-18 11:31:58</sys_created_on>
-            <sys_id>1931391593324310929a7c5efaba1030</sys_id>
+            <sys_created_on>2026-09-11 12:46:29</sys_created_on>
+            <sys_id>ba68a98593530350929a7c5efaba10c6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_asset_allocation" sys_domain="global" view="Default view">41af215193324310929a7c5efaba104e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-08-18 11:31:58</sys_updated_on>
+            <sys_updated_on>2026-09-11 12:46:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>u_allocation_date</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-08-18 11:31:58</sys_created_on>
-            <sys_id>9531391593324310929a7c5efaba1031</sys_id>
+            <sys_created_on>2026-09-11 12:46:29</sys_created_on>
+            <sys_id>7668a98593530350929a7c5efaba10c7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_asset_allocation" sys_domain="global" view="Default view">41af215193324310929a7c5efaba104e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-08-18 11:31:58</sys_updated_on>
+            <sys_updated_on>2026-09-11 12:46:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>u_actual_return_date</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-08-18 11:31:58</sys_created_on>
-            <sys_id>1531391593324310929a7c5efaba1032</sys_id>
+            <sys_created_on>2026-09-11 12:46:29</sys_created_on>
+            <sys_id>3268a98593530350929a7c5efaba10c8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_asset_allocation" sys_domain="global" view="Default view">41af215193324310929a7c5efaba104e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-08-18 11:31:58</sys_updated_on>
+            <sys_updated_on>2026-09-11 12:46:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>.split</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-08-18 11:31:58</sys_created_on>
-            <sys_id>9131391593324310929a7c5efaba1033</sys_id>
+            <sys_created_on>2026-09-11 12:46:29</sys_created_on>
+            <sys_id>fa68a98593530350929a7c5efaba10c8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_asset_allocation" sys_domain="global" view="Default view">41af215193324310929a7c5efaba104e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-08-18 11:31:58</sys_updated_on>
+            <sys_updated_on>2026-09-11 12:46:29</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>u_hardware_asset</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-08-18 11:31:58</sys_created_on>
-            <sys_id>1131391593324310929a7c5efaba1034</sys_id>
+            <sys_created_on>2026-09-11 12:46:29</sys_created_on>
+            <sys_id>b668a98593530350929a7c5efaba10c9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_asset_allocation" sys_domain="global" view="Default view">41af215193324310929a7c5efaba104e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-08-18 11:31:58</sys_updated_on>
+            <sys_updated_on>2026-09-11 12:46:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,41 +88,55 @@
             <element>u_allocation_status</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-08-18 11:31:58</sys_created_on>
-            <sys_id>9d31391593324310929a7c5efaba1034</sys_id>
+            <sys_created_on>2026-09-11 12:46:29</sys_created_on>
+            <sys_id>7268a98593530350929a7c5efaba10ca</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_asset_allocation" sys_domain="global" view="Default view">41af215193324310929a7c5efaba104e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-08-18 11:31:58</sys_updated_on>
+            <sys_updated_on>2026-09-11 12:46:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_predicted_return_risk</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-11 12:46:29</sys_created_on>
+            <sys_id>3e68a98593530350929a7c5efaba10ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_asset_allocation" sys_domain="global" view="Default view">41af215193324310929a7c5efaba104e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-11 12:46:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_expected_return_date</element>
-            <position>7</position>
+            <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-08-18 11:31:58</sys_created_on>
-            <sys_id>1d31391593324310929a7c5efaba1035</sys_id>
+            <sys_created_on>2026-09-11 12:46:29</sys_created_on>
+            <sys_id>f668a98593530350929a7c5efaba10cb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_asset_allocation" sys_domain="global" view="Default view">41af215193324310929a7c5efaba104e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-08-18 11:31:58</sys_updated_on>
+            <sys_updated_on>2026-09-11 12:46:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_extended_once</element>
-            <position>8</position>
+            <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-09-08 08:52:01</sys_created_on>
-            <sys_id>0bf55908935bc710929a7c5efaba10cf</sys_id>
+            <sys_created_on>2026-09-11 12:46:29</sys_created_on>
+            <sys_id>b268a98593530350929a7c5efaba10cc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_asset_allocation" sys_domain="global" view="Default view">41af215193324310929a7c5efaba104e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-09-08 08:52:01</sys_updated_on>
+            <sys_updated_on>2026-09-11 12:46:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
