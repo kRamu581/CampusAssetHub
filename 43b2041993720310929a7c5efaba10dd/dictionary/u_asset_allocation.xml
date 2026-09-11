@@ -2,8 +2,8 @@
     <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="e0afed1193324310929a7c5efaba10bc" label="Asset Allocation" max_length="40" name="u_asset_allocation" type="collection">
         <element choice="3" label="Allocation Status" max_length="40" name="u_allocation_status" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Overdue" sequence="2" value="overdue"/>
                 <element inactive_on_update="false" label="Lost" sequence="3" value="lost"/>
+                <element inactive_on_update="false" label="Overdue" sequence="2" value="overdue"/>
                 <element inactive_on_update="false" label="Returned" sequence="1" value="returned"/>
                 <element inactive_on_update="false" label="Allocated" sequence="0" value="allocated"/>
             </choice>
@@ -12,8 +12,8 @@
         <element choice="3" label="Predicted Return Risk" max_length="40" name="u_predicted_return_risk" type="choice">
             <choice>
                 <element inactive_on_update="false" label="High Risk" sequence="2" value="high_risk"/>
-                <element inactive_on_update="false" label="Low Risk" sequence="0" value="low_risk"/>
                 <element inactive_on_update="false" label="Medium Risk" sequence="1" value="medium_risk"/>
+                <element inactive_on_update="false" label="Low Risk" sequence="0" value="low_risk"/>
             </choice>
         </element>
         <element label="Textbook" max_length="32" name="u_textbook" reference="u_textbook" type="reference"/>

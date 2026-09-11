@@ -231,7 +231,7 @@
   while (gr.next()) {
     var isTextbook = !gr.u_textbook.nil();
     var name = isTextbook ? gr.u_textbook.getDisplayValue() : gr.u_hardware_asset.getDisplayValue();
-    var icon = isTextbook ? '📚' : '💻';
+    var icon = isTextbook ? ']]>📚<![CDATA[' : ']]>💻<![CDATA[';
     var isOverdue = gr.getValue('u_allocation_status') == 'Overdue';
 
     data.assets.push({
