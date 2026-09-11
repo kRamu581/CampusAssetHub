@@ -13,138 +13,179 @@
   };
 };]]></client_script>
         <controller_as>c</controller_as>
-        <css>.active-assets {&#13;
-  width: 86%;&#13;
-  max-width: 1200px;&#13;
-  margin: 0 auto 30px;&#13;
-&#13;
-  background: #ffffff;&#13;
-  border: 1px solid #e5e7eb;&#13;
-  border-radius: 10px;&#13;
-&#13;
-  padding: 20px 25px;&#13;
-&#13;
-  font-family: Arial, sans-serif;&#13;
-}&#13;
-&#13;
-.assets-header {&#13;
-  display: flex;&#13;
-  justify-content: space-between;&#13;
-  align-items: center;&#13;
-&#13;
-  padding-bottom: 15px;&#13;
-  border-bottom: 1px solid #e5e7eb;&#13;
-}&#13;
-&#13;
-.assets-header h3 {&#13;
-  margin: 0;&#13;
-  color: #111827;&#13;
-  font-size: 18px;&#13;
-}&#13;
-&#13;
-.asset-count {&#13;
-  font-size: 12px;&#13;
-  color: #2563eb;&#13;
-  background: #eff6ff;&#13;
-  padding: 5px 10px;&#13;
-  border-radius: 20px;&#13;
-}&#13;
-&#13;
-.asset-row {&#13;
-  display: flex;&#13;
-  align-items: center;&#13;
-  justify-content: space-between;&#13;
-&#13;
-  padding: 18px 0;&#13;
-  border-bottom: 1px solid #f0f0f0;&#13;
-}&#13;
-&#13;
-.asset-row:last-child {&#13;
-  border-bottom: none;&#13;
-}&#13;
-&#13;
-.asset-info {&#13;
-  display: flex;&#13;
-  align-items: center;&#13;
-  gap: 14px;&#13;
-}&#13;
-&#13;
-.asset-icon {&#13;
-  width: 46px;&#13;
-  height: 46px;&#13;
-&#13;
-  display: flex;&#13;
-  align-items: center;&#13;
-  justify-content: center;&#13;
-&#13;
-  background: #eff6ff;&#13;
-  border-radius: 10px;&#13;
-&#13;
-  font-size: 22px;&#13;
-}&#13;
-&#13;
-.asset-name {&#13;
-  font-size: 15px;&#13;
-  font-weight: 600;&#13;
-  color: #111827;&#13;
-}&#13;
-&#13;
-.asset-due {&#13;
-  font-size: 13px;&#13;
-  color: #6b7280;&#13;
-  margin-top: 4px;&#13;
-}&#13;
-&#13;
-.asset-actions {&#13;
-  display: flex;&#13;
-  gap: 10px;&#13;
-}&#13;
-&#13;
-.asset-actions button {&#13;
-  padding: 8px 16px;&#13;
-&#13;
-  border-radius: 6px;&#13;
-  cursor: pointer;&#13;
-&#13;
-  font-size: 13px;&#13;
-  font-weight: 600;&#13;
-}&#13;
-&#13;
-.return-btn {&#13;
-  background: #ffffff;&#13;
-  color: #374151;&#13;
-  border: 1px solid #d1d5db;&#13;
-}&#13;
-&#13;
-.renew-btn {&#13;
-  background: #2563eb;&#13;
-  color: #ffffff;&#13;
-  border: 1px solid #2563eb;&#13;
-}&#13;
-&#13;
-/* Mobile */&#13;
-&#13;
-@media (max-width: 768px) {&#13;
-&#13;
-  .active-assets {&#13;
-    width: 90%;&#13;
-    padding: 18px;&#13;
-  }&#13;
-&#13;
-  .asset-row {&#13;
-    align-items: flex-start;&#13;
-    flex-direction: column;&#13;
-    gap: 15px;&#13;
-  }&#13;
-&#13;
-  .asset-actions {&#13;
-    width: 100%;&#13;
-  }&#13;
-&#13;
-  .asset-actions button {&#13;
-    flex: 1;&#13;
-  }&#13;
-&#13;
+        <css>.active-assets {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  background: #ffffff;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 24px 32px;
+  font-family: 'Inter', -apple-system, sans-serif;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.assets-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #F1F5F9;
+}
+
+.assets-header h3 {
+  margin: 0;
+  color: #0F172A;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.asset-count {
+  font-size: 13px;
+  font-weight: 600;
+  color: #4F46E5;
+  background: #EEF2FF;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #64748B;
+  font-size: 15px;
+}
+
+.asset-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid #F8FAFC;
+  transition: background-color 0.2s ease;
+}
+
+.asset-row:last-child {
+  border-bottom: none;
+}
+
+.asset-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.asset-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F8FAFC;
+  border-radius: 12px;
+  font-size: 24px;
+  border: 1px solid #E2E8F0;
+}
+
+.overdue-icon {
+  background: #FEF2F2;
+  border-color: #FECACA;
+}
+
+.asset-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1E293B;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: #F1F5F9;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-overdue {
+  background: #FEF2F2;
+  color: #DC2626;
+}
+
+.asset-due {
+  font-size: 14px;
+  color: #64748B;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.text-red {
+  color: #DC2626;
+}
+
+.asset-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.asset-actions button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.return-btn {
+  background: #FFFFFF;
+  color: #334155;
+  border: 1px solid #CBD5E1;
+}
+
+.return-btn:hover {
+  background: #F8FAFC;
+  border-color: #94A3B8;
+}
+
+.renew-btn {
+  background: #2563EB;
+  color: #FFFFFF;
+  border: 1px solid #2563EB;
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.1);
+}
+
+.renew-btn:hover:not(:disabled) {
+  background: #1D4ED8;
+}
+
+.renew-btn:disabled {
+  background: #94A3B8;
+  border-color: #94A3B8;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .active-assets {
+    padding: 20px;
+  }
+  .asset-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .asset-actions {
+    width: 100%;
+  }
+  .asset-actions button {
+    flex: 1;
+  }
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -162,20 +203,47 @@
         <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
-
-  data.assets = [
-    {
-      icon: "]]>💻<![CDATA[",
-      name: "Dell Latitude Laptop",
-      dueDate: "Sep 02"
-    },
-    {
-      icon: "]]>📚<![CDATA[",
-      name: "Data Structures Textbook",
-      dueDate: "Sep 05"
+  data.assets = [];
+  
+  // Handle actions
+  if (input && input.action == 'renew_asset') {
+    var renGr = new GlideRecord('u_asset_allocation');
+    if (renGr.get(input.assetID) && renGr.u_allocated_to == gs.getUserID()) {
+      if (renGr.u_extended_once == true) {
+        gs.addErrorMessage("You have already used your 1-time extension for this asset.");
+      } else {
+        var gdt = new GlideDateTime(renGr.getValue('u_expected_return_date'));
+        gdt.addDaysUTC(7);
+        renGr.u_expected_return_date = gdt;
+        renGr.u_extended_once = true;
+        renGr.update();
+        gs.addInfoMessage("Asset renewed successfully for 1 week.");
+      }
     }
-  ];
+  }
 
+  // Query active assets for current user
+  var gr = new GlideRecord('u_asset_allocation');
+  gr.addQuery('u_allocated_to', gs.getUserID());
+  gr.addQuery('u_allocation_status', 'IN', 'Allocated,Overdue');
+  gr.query();
+
+  while (gr.next()) {
+    var isTextbook = !gr.u_textbook.nil();
+    var name = isTextbook ? gr.u_textbook.getDisplayValue() : gr.u_hardware_asset.getDisplayValue();
+    var icon = isTextbook ? '📚' : '💻';
+    var isOverdue = gr.getValue('u_allocation_status') == 'Overdue';
+
+    data.assets.push({
+      sys_id: gr.getUniqueValue(),
+      name: name,
+      icon: icon,
+      dueDate: gr.getDisplayValue('u_expected_return_date'),
+      status: gr.getDisplayValue('u_allocation_status'),
+      isOverdue: isOverdue,
+      extendedOnce: gr.getValue('u_extended_once') == '1' || gr.getValue('u_extended_once') == 'true'
+    });
+  }
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
@@ -199,20 +267,25 @@
     </span>
   </div>
 
+  <div class="empty-state" ng-if="c.data.assets.length === 0">
+    <p>You have no active assets checked out right now.</p>
+  </div>
+
   <div class="asset-row" ng-repeat="asset in c.data.assets">
 
     <div class="asset-info">
 
-      <div class="asset-icon">
+      <div class="asset-icon" ng-class="{'overdue-icon': asset.isOverdue}">
         {{asset.icon}}
       </div>
 
-      <div>
+      <div class="asset-details">
         <div class="asset-name">
           {{asset.name}}
+          <span class="status-badge" ng-class="{'status-overdue': asset.isOverdue}">{{asset.status}}</span>
         </div>
 
-        <div class="asset-due">
+        <div class="asset-due" ng-class="{'text-red': asset.isOverdue}">
           Due: {{asset.dueDate}}
         </div>
       </div>
@@ -229,8 +302,10 @@
 
       <button
         class="renew-btn"
-        ng-click="c.renewAsset(asset)">
-        Renew
+        ng-disabled="asset.extendedOnce"
+        ng-click="c.renewAsset(asset)"
+        title="{{asset.extendedOnce ? 'Already extended once' : 'Extend by 1 week'}}">
+        {{asset.extendedOnce ? 'Extended' : 'Renew'}}
       </button>
 
     </div>
