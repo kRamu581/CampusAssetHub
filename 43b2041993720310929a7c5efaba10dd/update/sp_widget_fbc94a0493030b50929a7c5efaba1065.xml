@@ -17,12 +17,12 @@
   width: 100%;
   max-width: 900px;
   margin: 0 auto 40px;
-  background: #ffffff;
-  border: 1px solid #E2E8F0;
-  border-radius: 16px;
+  background: #1F1F1F;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
   padding: 24px 32px;
-  font-family: 'Inter', -apple-system, sans-serif;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  font-family: 'Poppins', 'Inter', -apple-system, sans-serif;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .assets-header {
@@ -30,12 +30,12 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 20px;
-  border-bottom: 1px solid #F1F5F9;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 .assets-header h3 {
   margin: 0;
-  color: #0F172A;
+  color: #FFFFFF;
   font-size: 20px;
   font-weight: 700;
 }
@@ -43,16 +43,17 @@
 .asset-count {
   font-size: 13px;
   font-weight: 600;
-  color: #4F46E5;
-  background: #EEF2FF;
+  color: #53BA00;
+  background: rgba(83,186,0,0.1);
   padding: 6px 12px;
   border-radius: 20px;
+  border: 1px solid rgba(83,186,0,0.2);
 }
 
 .empty-state {
   text-align: center;
   padding: 40px 20px;
-  color: #64748B;
+  color: #B0B0B0;
   font-size: 15px;
 }
 
@@ -61,7 +62,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
-  border-bottom: 1px solid #F8FAFC;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
   transition: background-color 0.2s ease;
 }
 
@@ -81,21 +82,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #F8FAFC;
+  background: #2A2A2A;
   border-radius: 12px;
   font-size: 24px;
-  border: 1px solid #E2E8F0;
+  border: 1px solid rgba(255,255,255,0.08);
 }
 
 .overdue-icon {
-  background: #FEF2F2;
-  border-color: #FECACA;
+  background: rgba(220,38,38,0.1);
+  border-color: rgba(220,38,38,0.3);
 }
 
 .asset-name {
   font-size: 16px;
   font-weight: 600;
-  color: #1E293B;
+  color: #FFFFFF;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -106,26 +107,26 @@
   font-weight: 600;
   padding: 2px 8px;
   border-radius: 12px;
-  background: #F1F5F9;
-  color: #475569;
+  background: rgba(255,255,255,0.1);
+  color: #B0B0B0;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .status-overdue {
-  background: #FEF2F2;
-  color: #DC2626;
+  background: rgba(220,38,38,0.15);
+  color: #EF4444;
 }
 
 .asset-due {
   font-size: 14px;
-  color: #64748B;
+  color: #B0B0B0;
   margin-top: 6px;
   font-weight: 500;
 }
 
 .text-red {
-  color: #DC2626;
+  color: #EF4444;
 }
 
 .asset-actions {
@@ -143,32 +144,35 @@
 }
 
 .return-btn {
-  background: #FFFFFF;
-  color: #334155;
-  border: 1px solid #CBD5E1;
+  background: transparent;
+  color: #FFFFFF;
+  border: 1px solid rgba(255,255,255,0.2);
 }
 
 .return-btn:hover {
-  background: #F8FAFC;
-  border-color: #94A3B8;
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(255,255,255,0.3);
 }
 
 .renew-btn {
-  background: #2563EB;
+  background: #53BA00;
   color: #FFFFFF;
-  border: 1px solid #2563EB;
-  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.1);
+  border: 1px solid #53BA00;
+  box-shadow: 0 4px 12px rgba(83,186,0,0.15);
 }
 
 .renew-btn:hover:not(:disabled) {
-  background: #1D4ED8;
+  background: #479e00;
+  box-shadow: 0 4px 16px rgba(83,186,0,0.25);
+  transform: translateY(-1px);
 }
 
 .renew-btn:disabled {
-  background: #94A3B8;
-  border-color: #94A3B8;
+  background: #333333;
+  border-color: #333333;
+  color: #888888;
   cursor: not-allowed;
-  opacity: 0.8;
+  box-shadow: none;
 }
 
 @media (max-width: 768px) {
