@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1765000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Generative AI to write a customized, polite, and human-sounding reminder email for every single student.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>ai_asset_reminders</internal_name>
+        <label_cache>[{"name":"e1c261b9-df0e-468f-bc7b-b794aefbb1e4.Records","label":"1 - Look Up Records➛Asset Allocation Records","reference":"u_asset_allocation","reference_display":"Asset Allocation","type":"records","base_type":"records","usedInstances":{"6fb323b8-9412-438c-bcbb-6856a4515c85":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6fb323b8-9412-438c-bcbb-6856a4515c85.item","label":"2 - For Each➛Asset Allocation Record","reference":"u_asset_allocation","reference_display":"Asset Allocation","type":"reference","base_type":"reference","usedInstances":{"5b8a3ea8-17e0-4457-97fe-e87f96c7d887":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"6fb323b8-9412-438c-bcbb-6856a4515c85.item.u_allocated_to","label":"2 - For Each➛Asset Allocation Record➛Allocated to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"u_asset_allocation","column_name":"u_allocated_to","usedInstances":{}},{"name":"6fb323b8-9412-438c-bcbb-6856a4515c85.item.u_allocated_to.avatar","label":"2 - For Each➛Asset Allocation Record➛Allocated to➛Avatar","reference":"","reference_display":"Avatar","type":"user_image","base_type":"user_image","parent_table_name":"sys_user","column_name":"avatar","usedInstances":{}},{"name":"6fb323b8-9412-438c-bcbb-6856a4515c85.item.u_allocated_to.email","label":"2 - For Each➛Asset Allocation Record➛Allocated to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"5b8a3ea8-17e0-4457-97fe-e87f96c7d887":["ah_to"]}}]</label_cache>
+        <master_snapshot>dcf8c25193d78350929a7c5efaba104a</master_snapshot>
+        <master_snapshot_digest/>
+        <name>AI Asset Reminders</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>28f8c25193d78350929a7c5efaba1089</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 09:26:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>db4486d593978350929a7c5efaba1062</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>AI Asset Reminders</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Campus Asset" source="43b2041993720310929a7c5efaba10dd">43b2041993720310929a7c5efaba10dd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name>sys_hub_flow_db4486d593978350929a7c5efaba1062</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 09:56:19</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>170b429593d78350929a7c5efaba105a</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=db4486d593978350929a7c5efaba1062"/>
+    <sys_variable_value action="delete_multiple" query="document_key=db4486d593978350929a7c5efaba1062"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <published_version/>
+        <run_period/>
+        <run_start>2026-09-12 09:47:05</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 09:47:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>28f8c25193d78350929a7c5efaba1089</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 09:47:05</sys_updated_on>
+        <time>1970-01-01 16:00:00</time>
+        <timer_type>11</timer_type>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:28f8c25193d78350929a7c5efaba1089^sys_idNOT INe0f8c25193d78350929a7c5efaba108a"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_run_end/>
+        <entered_run_start/>
+        <entered_time/>
+        <max_drift/>
+        <name>Trigger:28f8c25193d78350929a7c5efaba1089</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <repeat_every/>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_daysofweek/>
+        <run_end/>
+        <run_month/>
+        <run_period/>
+        <run_start>2026-09-12 09:47:05</run_start>
+        <run_time>1970-01-01 16:00:00</run_time>
+        <run_type>daily</run_type>
+        <run_weekinmonth/>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('28f8c25193d78350929a7c5efaba1089');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 09:47:05</sys_created_on>
+        <sys_id>e0f8c25193d78350929a7c5efaba108a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 09:47:05</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">28f8c25193d78350929a7c5efaba1089</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=db4486d593978350929a7c5efaba1062"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=db4486d593978350929a7c5efaba1062"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=db4486d593978350929a7c5efaba1062^sys_idNOT IN9b4486d593978350929a7c5efaba1067"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>db4486d593978350929a7c5efaba1062</id>
+        <name>AI Asset Reminders</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 09:26:48</sys_created_on>
+        <sys_id>9b4486d593978350929a7c5efaba1067</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 09:26:48</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=9b4486d593978350929a7c5efaba1067"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=db4486d593978350929a7c5efaba1062"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=db4486d593978350929a7c5efaba1062"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=db4486d593978350929a7c5efaba1062"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=db4486d593978350929a7c5efaba1062^sys_idNOT IN78644ad593978350929a7c5efaba1056"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="AI Asset Reminders">db4486d593978350929a7c5efaba1062</flow>
+        <generation_source/>
+        <name>Daily</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 09:27:10</sys_created_on>
+        <sys_id>78644ad593978350929a7c5efaba1056</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 09:55:32</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21STWvcMBD9K0XnjZF3kzb1rRAWemgDyZJLCGYsjXcFo4/K8iZuyH/vyFaWfFToMm80b9576P5ZEHRIohE7Y1GshHEJowPaTQEZ3ZPR2KalZ8FpSD5OoklxxJXoo7c7tIEg8eMeaGDQR41RNLWUK3EEGvF2Gn5q5mIGBzazFr65y2X9/Zs8kzXfL/KykZIvd9XBkI7oRHP/sBIBIs+mzPz8oWUy+Qb0OWol1WbNR8r15Xndfd109VpvAPGCCT84fa8l/cfvWyf4lNBp1Cebn8KICPra0XR6ceAsF9sWngbzFwtVxB5ZvMKleSpbbQaOclpgdfBG4XVIxrsFSdBRmVGeRut+Lw641tjDSOmuBMrIODAfhqw5qyiS+tuDf7x5Xbg1bjZYmuQV0KmClKLpxoRDThwJLRO1FkIwbt+G6I9mHmYttppjq3ryj7x0MHtXgcrCK44Iqi3jVzN8B9FkF7+YhodfZvftnzHvXXwUxe1imh+UULYGqXyiQUUT0g9ecHz9dS8P/wDP0+DYygIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=db4486d593978350929a7c5efaba1062^sys_idNOT IN0916c2d993978350929a7c5efaba10c9,6f58c6d993978350929a7c5efaba101a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="AI Asset Reminders">db4486d593978350929a7c5efaba1062</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 09:34:33</sys_created_on>
+        <sys_id>0916c2d993978350929a7c5efaba10c9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 09:55:32</sys_updated_on>
+        <ui_id>e1c261b9-df0e-468f-bc7b-b794aefbb1e4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VX207jMBD9lSjPUZXQUljeKi4S0gISIF5YsJxk2lrrOlnb6QXEv+84dtJbgNLt7sJbPZ7LmfE5jnv/7LPUP/IP+50wpNH+4UEYttth2O22ExrFcbubxGHcif3AF3QE6KlpzAGXY8oLsy4IVQo0oZxnCdUsE7iZMpVzOrtzPj3j4fUWPZIh46kE4R/dPwR+TiVm1yD9o+eVLT3LgXAaA8dEt6a4d2mQBBsDXwpeb8QUqJZE2NSZTA2WMPBhqkGkgKX6lCsI/BEVKdWZnNUWCTS9EnxuGDKhMaNvnKeKPWH6w9D49QHbSsDu1UvipmXNyTBjCVzl5ZxKiwVqNzNejMSlbcDMGfq04LqaM1oKhfkgN5gNCIeofzPMJtdVwTMmyvbcpjkVXq+o1pLFhQZlzgI4jDARGdE8Z2JAcpmNWRmMWEatAcdFq8+zCRZVbCBaNDHAWzgi2jpD+0lpvqOSmS4uMA0GIyDG8bSJHbrKCllOZUwSXqhyQ1KhbC7/pZwV+VUYlLZr1x+xI0IHlUiW6x4GjMG18hJsxO39cE6JJBMpMzXVMsFr4hKlqS7UjwIzpc4M6WNBYJpDgj+JBF1IQbB/uD793rs9vztd18MuUm4noOPFDjedTmNw08iclJZsTkrRzqSEcP+TmLQsPp+W3lOHbfgdiSQHb5Jgf37eKpOa2MktaGSd4lsz9IwBT5eu+A3AVcFXhmxePHsNryNo39RYuev3vvxd/ynpiYBSYufNBGei/NQi0N3wNnz78vq2woPy+OesLW1UJevspZ7OvKftb9nyXCv+bgCyCrxBRN6tRdkAvLpfq/SOuu2dUbe99zHqInHun2v09dQaBly9qMzRVf5Pxp+u+iO7FgKil4ea+sfb1Yw+WnPP1FzRZvtD4lxklt05eYVgO36vvSK24G+qe4ihrh6xYiUTlg5Az6tXXmmmJ5T/bNp37Ko1VLb3x2+/zpva60ZznaEG8KWl8KgWH38RPjbWr4cosObtbodzoWFQDm9TiFXkBZ161zXGRuDuimB1Dcfpzg7fX//i81YNvlE91fy/xJ+dbSn88BuPWL9HnA8AAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0916c2d993978350929a7c5efaba10c9"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="AI Asset Reminders">db4486d593978350929a7c5efaba1062</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>6fb323b8-9412-438c-bcbb-6856a4515c85</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 09:44:34</sys_created_on>
+        <sys_id>6f58c6d993978350929a7c5efaba101a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 09:56:13</sys_updated_on>
+        <ui_id>5b8a3ea8-17e0-4457-97fe-e87f96c7d887</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6f58c6d993978350929a7c5efaba101a"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=db4486d593978350929a7c5efaba1062"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=db4486d593978350929a7c5efaba1062^sys_idNOT INc4560ed993978350929a7c5efaba103c"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8cf8825193d78350929a7c5efaba10fc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="AI Asset Reminders">db4486d593978350929a7c5efaba1062</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 09:35:35</sys_created_on>
+        <sys_id>c4560ed993978350929a7c5efaba103c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 09:56:13</sys_updated_on>
+        <ui_id>6fb323b8-9412-438c-bcbb-6856a4515c85</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51SwW7bMAz9F50Tw3YCt86twFCgh61AV/RSFAYl0YkwWdIkOaln+N9LxU5a9LiTzUfy8T2RI7N9dH0Mz/YuBLU3bPf6tmLKJIz+R2agQ7ZjKmIX2IodQfcpHkcsRFkVvF7LNsf1trpt11zc8DW/qbeALecFbrMnFNbLME3UKlVwGoaX/2cQB6Wlx0WkA0/aInq2G7+l4uCw0cBR06CFgfqVpLCoZVsXeS02ZbUp87y83Ra82vCilBtAWVHdpfNhMf3tDRI7hf7KS5+kosxXDN8jGok0qAUdcMU6MBKi9QPbRd8T4BHko9HDteKgTCQ6lmrfg/pH3EWep8IWyZHAOXkNm+UhZ1gcrBL46KKyZkYicL30CKv7zvya5acVYAu9jpcVENIH4kOXNCcVi6T298Geni4D75U5+1uS2grQ1whi9Ir3EUNaA2rsiKjpwDll9o3z9qjOzaSly/aagqzV9kRD07llIJLwjJ4IsnvCf5zhF/AqufhJNNQ8nd03f/s0d/axKG5m01QQhFcu3hHdERdx01u615kpzIchUahAA58T9nC58pQYaMlKfIVO1v9JUj+x6QO4vjRPLwMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=db4486d593978350929a7c5efaba1062"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=db4486d593978350929a7c5efaba1062"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_db4486d593978350929a7c5efaba1062"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_db4486d593978350929a7c5efaba1062"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Generative AI to write a customized, polite, and human-sounding reminder email for every single student.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>ai_asset_reminders</internal_name>
+        <label_cache>[{"name":"e1c261b9-df0e-468f-bc7b-b794aefbb1e4.Records","label":"1 - Look Up Records➛Asset Allocation Records","reference":"u_asset_allocation","reference_display":"Asset Allocation","type":"records","base_type":"records","usedInstances":{"6fb323b8-9412-438c-bcbb-6856a4515c85":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6fb323b8-9412-438c-bcbb-6856a4515c85.item","label":"2 - For Each➛Asset Allocation Record","reference":"u_asset_allocation","reference_display":"Asset Allocation","type":"reference","base_type":"reference","usedInstances":{"5b8a3ea8-17e0-4457-97fe-e87f96c7d887":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"6fb323b8-9412-438c-bcbb-6856a4515c85.item.u_allocated_to","label":"2 - For Each➛Asset Allocation Record➛Allocated to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"u_asset_allocation","column_name":"u_allocated_to","usedInstances":{}},{"name":"6fb323b8-9412-438c-bcbb-6856a4515c85.item.u_allocated_to.avatar","label":"2 - For Each➛Asset Allocation Record➛Allocated to➛Avatar","reference":"","reference_display":"Avatar","type":"user_image","base_type":"user_image","parent_table_name":"sys_user","column_name":"avatar","usedInstances":{}},{"name":"6fb323b8-9412-438c-bcbb-6856a4515c85.item.u_allocated_to.email","label":"2 - For Each➛Asset Allocation Record➛Allocated to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"5b8a3ea8-17e0-4457-97fe-e87f96c7d887":["ah_to"]}}]</label_cache>
+        <master>true</master>
+        <name>AI Asset Reminders</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="AI Asset Reminders">db4486d593978350929a7c5efaba1062</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 09:47:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dcf8c25193d78350929a7c5efaba104a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 09:56:15</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=dcf8c25193d78350929a7c5efaba104a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=dcf8c25193d78350929a7c5efaba104a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=dcf8c25193d78350929a7c5efaba104a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=dcf8c25193d78350929a7c5efaba104a^sys_idNOT IN1cf8c25193d78350929a7c5efaba104c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>dcf8c25193d78350929a7c5efaba104a</id>
+        <name>AI Asset Reminders</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 09:47:04</sys_created_on>
+        <sys_id>1cf8c25193d78350929a7c5efaba104c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 09:47:04</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=1cf8c25193d78350929a7c5efaba104c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=dcf8c25193d78350929a7c5efaba104a"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=dcf8c25193d78350929a7c5efaba104a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=dcf8c25193d78350929a7c5efaba104a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=dcf8c25193d78350929a7c5efaba104a^sys_idNOT INd0f8c25193d78350929a7c5efaba105d"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="AI Asset Reminders">dcf8c25193d78350929a7c5efaba104a</flow>
+        <generation_source/>
+        <name>Daily</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 09:47:04</sys_created_on>
+        <sys_id>d0f8c25193d78350929a7c5efaba105d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 09:56:15</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21STWvcMBD9K0XnjZF3kzb1rRAWemgDyZJLCGYsjXcFo4/K8iZuyH/vyFaWfFToMm80b9576P5ZEHRIohE7Y1GshHEJowPaTQEZ3ZPR2KalZ8FpSD5OoklxxJXoo7c7tIEg8eMeaGDQR41RNLWUK3EEGvF2Gn5q5mIGBzazFr65y2X9/Zs8kzXfL/KykZIvd9XBkI7oRHP/sBIBIs+mzPz8oWUy+Qb0OWol1WbNR8r15Xndfd109VpvAPGCCT84fa8l/cfvWyf4lNBp1Cebn8KICPra0XR6ceAsF9sWngbzFwtVxB5ZvMKleSpbbQaOclpgdfBG4XVIxrsFSdBRmVGeRut+Lw641tjDSOmuBMrIODAfhqw5qyiS+tuDf7x5Xbg1bjZYmuQV0KmClKLpxoRDThwJLRO1FkIwbt+G6I9mHmYttppjq3ryj7x0MHtXgcrCK44Iqi3jVzN8B9FkF7+YhodfZvftnzHvXXwUxe1imh+UULYGqXyiQUUT0g9ecHz9dS8P/wDP0+DYygIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=dcf8c25193d78350929a7c5efaba104a^sys_idNOT IN5cf8c25193d78350929a7c5efaba105b,d0f8c25193d78350929a7c5efaba105a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="AI Asset Reminders">dcf8c25193d78350929a7c5efaba104a</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>6fb323b8-9412-438c-bcbb-6856a4515c85</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 09:47:04</sys_created_on>
+        <sys_id>5cf8c25193d78350929a7c5efaba105b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 09:56:15</sys_updated_on>
+        <ui_id>5b8a3ea8-17e0-4457-97fe-e87f96c7d887</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Z23LbNhD9lQ37lsq07pacJ9WOx57JbSxPOp04owFBUEINEgwIWlY8+os+9+P6JV0ApK6OIsVua0/94jGXwOLs4pzFgvp06/HQO/SaYafaDqImOag26o1qtVPvdoNGN6p2DrrVGg29ipeQmOFIxahU5vmaiNwYbm/bUYCTgs5et1mr7zUbHboX0CDYa3dabdJs1Vq00/K5ZvF0ivNCnqWCTD4W09FCR1yEiiXe4afPFS8lClfSTHmHtyuvtoUqSMAEDr0gasg0nJeQV0PQk9Q8h5LmMUv0gJfGN4WD4+INnB3jG5xkUFUrHrvRLAkZwomIyFjFi0kSEi3VZGZRjITvEzE3jHii0WUvyyTlRLMM9IgBiwkXMOZ6BAQcMN8z/m4y/hXBNerGVcQwB9Rg5QnlISLyFsyDIqX4+mz+OjommvS1yqnO1SzTklOWuWyGLCK50EeLNjfgfaq5TNwUTQJRzpYij5N3LonezMHCTuYZgmGpyY0JFhfHwKP+SI7PS7AnPLFZLLIiJCVi9hT1GVF0dMKZMFud5HGAYyse0VrxINcGJpJC4Kj5OgML1ayFI5lgditjkqY8GQ5SJa+5XRDhx/5Q4IMfCTnG+RkfJj6hJlYfd4/4J2g/tuaPRHET+Ft0g5OnFS+bZEeCZNk8fMz/4Etu0LtkLMMxsweWcGYyVTzVPVzqmhXBTiuF9GrdTXwOm3PeLvicyy8fICimB0SYVNp9W9NYz4yA3uKI3TS3Bca55gxf7sZc6G3N9mZxLrxzLwq11XZUm+NcIbYLVJh2RcBpC3QBbyawTnVZYN8Q1uMQ1EwmWytqWTn/jDqQJNnAUbyIzS7+A6r5nlaq7XYQtIPWQWPOwy6NwoMgapMD2pjzbowVVsVEXQ1shV0QTG1dH0Xt2E0TW2ApNYFVWeQhg19LUJtwFiIJpMQyl6wqBJHun9jszhRSv9d55KgJWgJuppjgKTSDZIzzM0qPiAaeQYa75cOFBF5EtTCjAhOZQ5xnGkzFIcviWzrYmo9XdwUdCuvxnVx5EsJ8eAG2Nh8EZE5sMhpo+WNtop+XpxkL0Ylv+TedwrpwH8bpbrrfIgWzs1Cu56OQd4a7nwxX1N0vjYWyG5uV7Y66NWEvHG3Vxyuyp6IhA1zwmFtCOPU/vKzCjZxi1SUaUbogqwe4UG2xeEnoo6N1JLsQuvljR9Uzo58co2sbb+msvcSj4KEpvcXqJaV/WeF0sDOpW8+k/p+QurWZVnSJSFke/M6oXiB2zwYC5+xLzhULD+E3mSugJE7zDOwt3vTXYc4gkzJ5ccc9fmcHO7Y234+vlE1/Ft1dEe8in/Zzk/Ofq+fhpUI2UimqL9dcGU4WdHKZV6sNmoLBvKd5MokpU1LqABNzZV+Gl96lG8ZOGXb18OlYkSEYS/2gV7b55pL6159/wAlXeCE1y7kBkHIhYIS5/1yBMyAxkARIrmVsZ2ESeKZJoiGSyl6Aj5zC3Ge00zzwcVYiNdIidNdic+ulucLN1HiFHpFrcytexHRKVDgmijkfazCAjhi9Qm8y1xVEEwJ3d220h7kwy0gIGN6jkbgJPgaTJfevb1IUHtrP7QBAnq/Hiqgji9TgiHjCM3TuPj1zXDUVjGQMQiVTs7qMIsDITPhnF4BkuprNTxjOiyV60TxmNksTW4jwT8bGsvwOQDGtQg6BJ8WHhD5T15g0+CCVJsLGSQWnV3DpnbOEjS89EydPbPYxka4uOOcmtzgHA6/BmLGrF/DBAcaNYMXHicgADxgKgWUgr5nCUojpBIHpAKQvEXoCEWMYNCal2HGOYsO1MLvmAwh3ubZLEooR2Y8dI5JcGVsF3slxz/IDemeOp/upI+J6uS54/A2etn9qdF99j6t20L/PV7vsHZxdhXNP3lp33+Tu6mKPmb8F3uYrx+PZ49Pm827dwxYlf9Z0u4K/dgIUfcNIx2Klazi9ePtm3jMc3LPlbrdajfZz13Dvnjsdh3UjuLSI7WH77tJoIig5gv9uHOntv7xMXr7sUdyJDAz0/aJrNrFAnmH4VstROLAWaXtWH/rWgft27coVCs12JD4Yj+8N88D9ImlKHNYXU11Rvz/XUOLwWimsI6dIQmGW6DOXQQvmmnBhf9qSlg/Yojt+QZ4isFQhVDPn0vPxBCQRSqyEZ6azGyzngh0iGgXZCGsP7gYF1wiVA33c7uGQKb8o674daLbTxoWrvjK+ishmXoxx35tOp5//BoMeUgkKIAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5cf8c25193d78350929a7c5efaba105b"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="AI Asset Reminders">dcf8c25193d78350929a7c5efaba104a</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 09:47:04</sys_created_on>
+        <sys_id>d0f8c25193d78350929a7c5efaba105a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 09:47:04</sys_updated_on>
+        <ui_id>e1c261b9-df0e-468f-bc7b-b794aefbb1e4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX22rjMBD9leBnE+w6Tbt9C71AoRdoS192u0K25USsInslOZeG/PuOLna8idtNwIWWfYtmRqMzM+fIyveVR1PvzDvNBkGAw+PTkyCIoiAYDqMEh3EcDZM4iAex53scTwlEKhwzAssZZqVelwhLSRTCjOUJVjTn4EypLBhePruYkY7ojZoRyYSyVBDunX1/8b0CC8iuiPDOVluufeExHBMGoU8O3xZctSzqJTI+a7tpbuvdWUcuUg0l8D2yUISnBDBkmEnie1PMU6xysawtguD0nrONYUK5goyeDl5I+grnngY6LiNQVUKsr14i1yxrzi6wwo9KlIkqhQtNJjlNiLT9SEmGS6bOmzYbcF+Y3pottmy7O2fllN/Zdnh1gmo2YCklgCCFLlQjd2Vkj5N8/lChvKLc9MQ59SRZvcJKCRqXSuNZeYSRKSRCU1wUlI9RIfIZNZsBy7Q/ZrDoZyyfw6GSjnkfJxp4H/qK+1dgvzDmZyyoruIW0sBmAEQZMATZEcq8FKaVM5SwUhqHwFzaXN7a9+RSnjPg5qZyaDn6XWrctg+uYmSbprckghZqBClmxBW39vdSyHGwoVyS85RqFPJvmdT0R1JhVcofJWRKnZmkP0tEFgVJ4CcSBKbPEXSEPFzejJ6uny93VdVFyi5laHpQyfC82YS2xjhB7thu2hI4QYadCRLq+EqShMM/nyIP15htwT+Elpy8S7LjDZ9kLhSyvWwobVcoB/N8DwgVz+81M3vx8i1UjuYZJSxt++5cacfWd+fo//zufEqSA6AU2elRzig3jwgA+lHsD96/Yr9t8czQa8N9Y8My2dUA7qm893qwEvaAUynhEc7uPVk8LRCr+95QZvuur4xOAFFnAoiOuhHAqi6zbmRLz6t3o55mFf+q4/F2PFCwsSFctwnsoDPDQ888Wu8KODpIwU2yWc/FG5zr+IH5hiL9j7wCJrDVnYesftGcpmOiNqdXUWmu5pj9avM7xqFqUKa8D3isDt6V7TDcSBSUAk9DCcNrvlZDeB7t3iGhb82HXSF7YKnacYsXvYcaTCtCd42A0snYzKZ5j1zXVkfyQYcPxk/7Ja2G1arBamZf4j9ed0J4+QMVrn452RAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d0f8c25193d78350929a7c5efaba105a"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=dcf8c25193d78350929a7c5efaba104a"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=dcf8c25193d78350929a7c5efaba104a^sys_idNOT INd8f8c25193d78350929a7c5efaba1057"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8cf8825193d78350929a7c5efaba10fc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="AI Asset Reminders">dcf8c25193d78350929a7c5efaba104a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 09:47:04</sys_created_on>
+        <sys_id>d8f8c25193d78350929a7c5efaba1057</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Campus Asset">43b2041993720310929a7c5efaba10dd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 09:56:15</sys_updated_on>
+        <ui_id>6fb323b8-9412-438c-bcbb-6856a4515c85</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51TwW6jMBD9F58JAhLRklvVqlKl3a2UVr2sqmhsD4m1xqa2SUpR/n3HgdCqx55gnmfevPcwA7NdaLvgn+2N92pn2Prva8KUiRi9D8xAg2zNVMDGs4QdQHexHgbMRVHmvFrIOsPFqryuF1xc8QW/qlaANec5rtINCuukP51oVCrfauhffs4g9kpLh5PIFhxpC+jYevh2pCQtyCtZV3lWiWVRLossK65XOS+XPC/kElCWRKiBo6bWh8ndN7Ohb2PpRgkT8Gua2cwoPaKIIksYvgc0Eml9DdpjwhowEoJ1PVsH1xHgEOSj0f3csVcmEB2Lve9efdDGPMtiY41kSOB4OJfbKccRru8gwBNRi9C5qVXsrRLoxygk1tDpcPsVGxse26CsGUcCcH2ZtrprzJ8xCTYTXD4bIZ0nEdhGo1H65KN+2tvj5qLyXplzKNOhtgL0XEEITvEuRD0DQ40NEW0baFtldtvW2YM6D5OWJt1pKtJa2yMtjVc0BRGFp5QrpPeE353hF3AquvhNNDR8Spjv/a0G7z+9UIjbty4qGZ1NHrZjDHFEONWGG1pwwEnu6TXe+pF7zlQoTxKeI/Zw+VfiQU83SImv0NG6f1H8J3b6D4EzCZx1AwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=dcf8c25193d78350929a7c5efaba104a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=dcf8c25193d78350929a7c5efaba104a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_dcf8c25193d78350929a7c5efaba104a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_dcf8c25193d78350929a7c5efaba104a"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>db4486d593978350929a7c5efaba1062</sys_id>
+        <latest_snapshot>dcf8c25193d78350929a7c5efaba104a</latest_snapshot>
+        <compiler_build/>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=db4486d593978350929a7c5efaba1062^sys_idNOT IN68f8c25193d78350929a7c5efaba10d7"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>db4486d593978350929a7c5efaba1062</plan_id>
+        <snapshot>dcf8c25193d78350929a7c5efaba104a</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 09:47:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>68f8c25193d78350929a7c5efaba10d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 09:47:05</sys_updated_on>
+        <trigger display_value="">28f8c25193d78350929a7c5efaba1089</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=db4486d593978350929a7c5efaba1062"/>
+</record_update>
