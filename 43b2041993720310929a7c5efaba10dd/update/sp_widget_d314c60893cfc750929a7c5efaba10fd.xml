@@ -37,7 +37,7 @@
   align-items: center;&#13;
   justify-content: center;&#13;
 &#13;
-  background: #2563eb;&#13;
+  background: #53BA00;&#13;
   color: white;&#13;
 &#13;
   border-radius: 10px;&#13;
@@ -110,7 +110,7 @@
   justify-content: space-between;&#13;
   align-items: center;&#13;
 &#13;
-  color: #6b7280;&#13;
+  color: #B0B0B0;&#13;
   font-size: 12px;&#13;
 }&#13;
 &#13;
